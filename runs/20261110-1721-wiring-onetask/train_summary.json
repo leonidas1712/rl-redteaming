@@ -1,0 +1,9 @@
+{
+ "run_id": "20261110-1721-wiring-onetask",
+ "reward_mode": "real",
+ "steps": 30,
+ "t_train_s": 1298.2,
+ "curriculum_events": [],
+ "final_level": "L0_obey",
+ "t_total_s": 1491.3
+}

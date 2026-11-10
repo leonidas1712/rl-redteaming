@@ -1,0 +1,5 @@
+{"step": 0, "canary_pass@1_L2": 0.109375, "canary_format_ok": 0.96875}
+{"step": 25, "canary_pass@1_L2": 0.21875, "canary_format_ok": 0.953125}
+{"step": 50, "canary_pass@1_L2": 0.5859375, "canary_format_ok": 0.84375}
+{"step": 75, "canary_pass@1_L2": 0.9296875, "canary_format_ok": 1.0}
+{"step": 80, "canary_pass@1_L2": 0.921875, "canary_format_ok": 0.984375}

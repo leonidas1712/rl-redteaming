@@ -1,0 +1,58 @@
+{
+ "run_id": "20261110-1525-phase0",
+ "phase": "phase0",
+ "models": {
+  "target": {
+   "name": "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+   "revision": "b6d637bef2393152b3da2b2fde72eecdee30557e",
+   "allow_patterns": [
+    "consolidated.safetensors",
+    "params.json",
+    "tekken.json",
+    "*.json",
+    "*.jinja",
+    "*.txt"
+   ]
+  },
+  "attacker": {
+   "name": "Qwen/Qwen2.5-3B-Instruct",
+   "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+   "allow_patterns": null
+  }
+ },
+ "gpu": "A100-80GB",
+ "source_sha256": {
+  "modal_app.py": "cf51cb840f545eac",
+  "src/redteam/attacker.py": "cb893d4cc45ac427",
+  "src/redteam/episode.py": "a6d5434e0e24287c",
+  "src/redteam/injecagent_vendored.py": "7d7d2adefa00ea7d",
+  "src/redteam/phase0.py": "fc82851fd853165c",
+  "src/redteam/target.py": "9af1bcb039b4f70e"
+ },
+ "started_local": "2026-11-10T15:25:38.444015",
+ "vllm_cmd": [
+  "vllm",
+  "serve",
+  "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+  "--revision",
+  "b6d637bef2393152b3da2b2fde72eecdee30557e",
+  "--port",
+  "8010",
+  "--tokenizer-mode",
+  "mistral",
+  "--config-format",
+  "mistral",
+  "--load-format",
+  "mistral",
+  "--enable-auto-tool-choice",
+  "--tool-call-parser",
+  "mistral",
+  "--gpu-memory-utilization",
+  "0.3",
+  "--max-model-len",
+  "8192",
+  "--seed",
+  "0"
+ ],
+ "t_vllm_startup_s": 205.1
+}

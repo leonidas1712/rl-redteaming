@@ -1,0 +1,15 @@
+# Defaults for `hud eval` run from hud_env/. CLI flags override these. ${VAR} expands from the environment.
+[eval]
+source = "tasks.py"
+agent = "openai_compatible"
+all = true                 # every task, not just the first
+group_size = 8             # 8 attempts per task, like a GRPO group
+max_concurrent = 16
+max_steps = 2              # the attacker answers once (no tools); 2 leaves room for one retry
+gateway = false            # never route through HUD's hosted gateway
+
+[openai_compatible]
+model = "base"             # "base" = untrained attacker; "step80" = Run A's trained LoRA
+base_url = "${ATTACKER_URL}"
+api_key = "${VLLM_API_KEY}"
+completion_kwargs = { temperature = 1.0, top_p = 1.0, max_tokens = 256 }

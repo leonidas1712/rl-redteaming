@@ -1,0 +1,585 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/<workspace>/main/ap-yGBQKvzn8lOPezUNM3iaDo
+✓ Created objects.
+├── ✓ Uploaded <repo>/modal_app.py
+├── ✓ Uploaded 
+│   <repo>/runs/precheck/toolcall_openrouter_ministral_level
+│   s.jsonl
+├── ✓ Uploaded <repo>/data
+├── ✓ Uploaded <repo>/src
+├── ✓ Created Function prefetch.
+├── ✓ Created Function phase0_remote.
+├── ✓ Created Function sweep_remote.
+└── ✓ Created Function train_remote.
+run_id 20261110-1805-phase3
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.9.0
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+
+[1ALoading weights:   0%|          | 0/434 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/434 [00:00<01:30,  4.78it/s]
+[1ALoading weights:   5%|▌         | 22/434 [00:00<00:04, 85.06it/s]
+[1ALoading weights:   9%|▊         | 37/434 [00:00<00:03, 102.21it/s]
+[1ALoading weights:  14%|█▍        | 61/434 [00:00<00:02, 138.08it/s]
+[1ALoading weights:  20%|█▉        | 85/434 [00:00<00:02, 162.63it/s]
+[1ALoading weights:  25%|██▌       | 110/434 [00:00<00:01, 182.27it/s]
+[1ALoading weights:  30%|███       | 132/434 [00:00<00:01, 189.13it/s]
+[1ALoading weights:  35%|███▌      | 153/434 [00:00<00:01, 193.74it/s]
+[1ALoading weights:  40%|███▉      | 173/434 [00:01<00:01, 192.81it/s]
+[1ALoading weights:  45%|████▌     | 197/434 [00:01<00:01, 198.67it/s]
+[1ALoading weights:  50%|█████     | 218/434 [00:01<00:01, 201.22it/s]
+[1ALoading weights:  56%|█████▌    | 241/434 [00:01<00:00, 208.53it/s]
+[1ALoading weights:  61%|██████    | 265/434 [00:01<00:00, 213.30it/s]
+[1ALoading weights:  67%|██████▋   | 289/434 [00:01<00:00, 219.41it/s]
+[1ALoading weights:  72%|███████▏  | 314/434 [00:01<00:00, 221.51it/s]
+[1ALoading weights:  78%|███████▊  | 337/434 [00:01<00:00, 208.07it/s]
+[1ALoading weights:  82%|████████▏ | 358/434 [00:01<00:00, 201.13it/s]
+[1ALoading weights:  87%|████████▋ | 379/434 [00:02<00:00, 197.80it/s]
+[1ALoading weights:  93%|█████████▎| 405/434 [00:02<00:00, 211.45it/s]
+[1ALoading weights:  98%|█████████▊| 427/434 [00:02<00:00, 210.57it/s]
+[1ALoading weights: 100%|██████████| 434/434 [00:02<00:00, 188.91it/s]
+[RANK 0] Detected kernel version 4.19.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+CANARY {'step': 0, 'canary_pass@1_L2': 0.109375, 'canary_format_ok': 0.96875}
+
+[1A  0%|          | 0/80 [00:00<?, ?it/s]
+PROGRESS step=1 reward=0.266 frac_reward_zero_std=0.125 level_idx=0.000 reward_at_current_level=0.266 format_ok=0.906 entropy=1.016 mean_length=156.703 clipped_ratio=0.031 step_time=31.674
+[1A  1%|▏         | 1/80 [00:32<42:36, 32.36s/it]
+[1A                                              
+{'loss': '0.001524', 'grad_norm': '0.3111', 'learning_rate': '0', 'num_tokens': '3.51e+04', 'completions/mean_length': '156.7', 'completions/min_length': '102', 'completions/max_length': '256', 'completions/clipped_ratio': '0.03125', 'completions/mean_terminated_length': '153.5', 'completions/min_terminated_length': '102', 'completions/max_terminated_length': '233', 'rewards/injection_reward/mean': '0.2656', 'rewards/injection_reward/std': '0.4452', 'reward': '0.2656', 'reward_std': '0.4452', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9062', 'ours/level_idx': '0', 'ours/reward_at_current_level': '0.2656', 'ours/t_reward_s': '8.328', 'entropy': '1.016', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.67', 'epoch': '0.0125'}
+[1A
+[1A  1%|▏         | 1/80 [00:32<42:36, 32.36s/it]
+PROGRESS step=2 reward=0.203 frac_reward_zero_std=0.625 level_idx=0.000 reward_at_current_level=0.203 format_ok=0.922 entropy=0.936 mean_length=156.844 clipped_ratio=0.000 step_time=30.966
+[1A  2%|▎         | 2/80 [01:03<41:26, 31.88s/it]
+[1A                                              
+{'loss': '0.0168', 'grad_norm': '0.2207', 'learning_rate': '1e-05', 'num_tokens': '7.072e+04', 'completions/mean_length': '156.8', 'completions/min_length': '97', 'completions/max_length': '245', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '156.8', 'completions/min_terminated_length': '97', 'completions/max_terminated_length': '245', 'rewards/injection_reward/mean': '0.2031', 'rewards/injection_reward/std': '0.4055', 'reward': '0.2031', 'reward_std': '0.4055', 'frac_reward_zero_std': '0.625', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9219', 'ours/level_idx': '0', 'ours/reward_at_current_level': '0.2031', 'ours/t_reward_s': '8.958', 'entropy': '0.9356', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.97', 'epoch': '0.025'}
+[1A
+[1A  2%|▎         | 2/80 [01:03<41:26, 31.88s/it]
+PROGRESS step=3 reward=0.312 frac_reward_zero_std=0.125 level_idx=0.000 reward_at_current_level=0.312 format_ok=0.891 entropy=0.988 mean_length=158.797 clipped_ratio=0.031 step_time=30.734
+[1A  4%|▍         | 3/80 [01:35<40:35, 31.63s/it]
+[1A                                              
+{'loss': '-0.01367', 'grad_norm': '0.3038', 'learning_rate': '2e-05', 'num_tokens': '1.061e+05', 'completions/mean_length': '158.8', 'completions/min_length': '114', 'completions/max_length': '256', 'completions/clipped_ratio': '0.03125', 'completions/mean_terminated_length': '155.7', 'completions/min_terminated_length': '114', 'completions/max_terminated_length': '238', 'rewards/injection_reward/mean': '0.3125', 'rewards/injection_reward/std': '0.4672', 'reward': '0.3125', 'reward_std': '0.4672', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.8906', 'ours/level_idx': '0', 'ours/reward_at_current_level': '0.3125', 'ours/t_reward_s': '8.154', 'entropy': '0.9878', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.73', 'epoch': '0.0375'}
+[1A
+[1A  4%|▍         | 3/80 [01:35<40:35, 31.63s/it]
+PROGRESS step=4 reward=0.188 frac_reward_zero_std=0.500 level_idx=0.000 reward_at_current_level=0.188 format_ok=0.938 entropy=0.941 mean_length=156.297 clipped_ratio=0.016 step_time=30.934
+[1A  5%|▌         | 4/80 [02:06<40:01, 31.59s/it]
+[1A                                              
+{'loss': '0.02884', 'grad_norm': '0.2477', 'learning_rate': '2e-05', 'num_tokens': '1.416e+05', 'completions/mean_length': '156.3', 'completions/min_length': '94', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '154.7', 'completions/min_terminated_length': '94', 'completions/max_terminated_length': '255', 'rewards/injection_reward/mean': '0.1875', 'rewards/injection_reward/std': '0.3934', 'reward': '0.1875', 'reward_std': '0.3934', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9375', 'ours/level_idx': '0', 'ours/reward_at_current_level': '0.1875', 'ours/t_reward_s': '7.868', 'entropy': '0.9415', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.93', 'epoch': '0.05'}
+[1A
+[1A  5%|▌         | 4/80 [02:06<40:01, 31.59s/it]
+PROGRESS step=5 reward=0.328 frac_reward_zero_std=0.250 level_idx=0.000 reward_at_current_level=0.328 format_ok=0.938 entropy=0.908 mean_length=167.016 clipped_ratio=0.000 step_time=30.768
+[1A  6%|▋         | 5/80 [02:40<40:22, 32.30s/it]
+[1A                                              
+{'loss': '0.04359', 'grad_norm': '0.2864', 'learning_rate': '2e-05', 'num_tokens': '1.781e+05', 'completions/mean_length': '167', 'completions/min_length': '90', 'completions/max_length': '248', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '167', 'completions/min_terminated_length': '90', 'completions/max_terminated_length': '248', 'rewards/injection_reward/mean': '0.3281', 'rewards/injection_reward/std': '0.4732', 'reward': '0.3281', 'reward_std': '0.4732', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9375', 'ours/level_idx': '0', 'ours/reward_at_current_level': '0.3281', 'ours/t_reward_s': '8.256', 'entropy': '0.9082', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.77', 'epoch': '0.0625'}
+[1A
+[1A  6%|▋         | 5/80 [02:40<40:22, 32.30s/it]
+PROGRESS step=6 reward=0.219 frac_reward_zero_std=0.125 level_idx=0.000 reward_at_current_level=0.219 format_ok=0.969 entropy=0.958 mean_length=145.047 clipped_ratio=0.000 step_time=28.494
+[1A  8%|▊         | 6/80 [03:09<38:28, 31.19s/it]
+[1A                                              
+{'loss': '0.001004', 'grad_norm': '0.3177', 'learning_rate': '2e-05', 'num_tokens': '2.126e+05', 'completions/mean_length': '145', 'completions/min_length': '85', 'completions/max_length': '220', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '145', 'completions/min_terminated_length': '85', 'completions/max_terminated_length': '220', 'rewards/injection_reward/mean': '0.2188', 'rewards/injection_reward/std': '0.4167', 'reward': '0.2188', 'reward_std': '0.4167', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9688', 'ours/level_idx': '0', 'ours/reward_at_current_level': '0.2188', 'ours/t_reward_s': '8.535', 'entropy': '0.9575', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '28.49', 'epoch': '0.075'}
+[1A
+[1A  8%|▊         | 6/80 [03:09<38:28, 31.19s/it]
+PROGRESS step=7 reward=0.203 frac_reward_zero_std=0.375 level_idx=0.000 reward_at_current_level=0.203 format_ok=0.906 entropy=0.900 mean_length=136.969 clipped_ratio=0.000 step_time=29.895
+[1A  9%|▉         | 7/80 [03:39<37:40, 30.96s/it]
+[1A                                              
+{'loss': '-0.04574', 'grad_norm': '0.2952', 'learning_rate': '2e-05', 'num_tokens': '2.467e+05', 'completions/mean_length': '137', 'completions/min_length': '60', 'completions/max_length': '248', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '137', 'completions/min_terminated_length': '60', 'completions/max_terminated_length': '248', 'rewards/injection_reward/mean': '0.2031', 'rewards/injection_reward/std': '0.4055', 'reward': '0.2031', 'reward_std': '0.4055', 'frac_reward_zero_std': '0.375', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9062', 'ours/level_idx': '0', 'ours/reward_at_current_level': '0.2031', 'ours/t_reward_s': '7.702', 'entropy': '0.9004', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '29.89', 'epoch': '0.0875'}
+[1A
+[1A  9%|▉         | 7/80 [03:39<37:40, 30.96s/it]
+PROGRESS step=8 reward=0.219 frac_reward_zero_std=0.500 level_idx=0.000 reward_at_current_level=0.219 format_ok=0.969 entropy=0.831 mean_length=151.297 clipped_ratio=0.031 step_time=31.604
+[1A 10%|█         | 8/80 [04:12<37:37, 31.36s/it]
+[1A                                              
+{'loss': '-0.02848', 'grad_norm': '0.2253', 'learning_rate': '2e-05', 'num_tokens': '2.821e+05', 'completions/mean_length': '151.3', 'completions/min_length': '63', 'completions/max_length': '256', 'completions/clipped_ratio': '0.03125', 'completions/mean_terminated_length': '147.9', 'completions/min_terminated_length': '63', 'completions/max_terminated_length': '233', 'rewards/injection_reward/mean': '0.2188', 'rewards/injection_reward/std': '0.4167', 'reward': '0.2188', 'reward_std': '0.4167', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9688', 'ours/level_idx': '0', 'ours/reward_at_current_level': '0.2188', 'ours/t_reward_s': '8.532', 'entropy': '0.8306', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.6', 'epoch': '0.1'}
+[1A
+[1A 10%|█         | 8/80 [04:12<37:37, 31.36s/it]
+PROGRESS step=9 reward=0.125 frac_reward_zero_std=0.500 level_idx=0.000 reward_at_current_level=0.125 format_ok=0.953 entropy=0.873 mean_length=147.016 clipped_ratio=0.016 step_time=30.383
+[1A 11%|█▏        | 9/80 [04:43<36:58, 31.24s/it]
+[1A                                              
+{'loss': '-0.02332', 'grad_norm': '0.2317', 'learning_rate': '2e-05', 'num_tokens': '3.165e+05', 'completions/mean_length': '147', 'completions/min_length': '98', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '145.3', 'completions/min_terminated_length': '98', 'completions/max_terminated_length': '236', 'rewards/injection_reward/mean': '0.125', 'rewards/injection_reward/std': '0.3333', 'reward': '0.125', 'reward_std': '0.3333', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9531', 'ours/level_idx': '0', 'ours/reward_at_current_level': '0.125', 'ours/t_reward_s': '7.777', 'entropy': '0.8728', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.38', 'epoch': '0.1125'}
+[1A
+[1A 11%|█▏        | 9/80 [04:43<36:58, 31.24s/it]
+PROGRESS step=10 reward=0.219 frac_reward_zero_std=0.375 level_idx=0.000 reward_at_current_level=0.219 format_ok=0.984 entropy=0.809 mean_length=141.391 clipped_ratio=0.000 step_time=27.275
+[1A 12%|█▎        | 10/80 [05:13<36:03, 30.91s/it]
+[1A                                               
+{'loss': '-0.01318', 'grad_norm': '0.2744', 'learning_rate': '2e-05', 'num_tokens': '3.512e+05', 'completions/mean_length': '141.4', 'completions/min_length': '69', 'completions/max_length': '204', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '141.4', 'completions/min_terminated_length': '69', 'completions/max_terminated_length': '204', 'rewards/injection_reward/mean': '0.2188', 'rewards/injection_reward/std': '0.4167', 'reward': '0.2188', 'reward_std': '0.4167', 'frac_reward_zero_std': '0.375', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '0', 'ours/reward_at_current_level': '0.2188', 'ours/t_reward_s': '8.289', 'entropy': '0.8093', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '27.27', 'epoch': '0.125'}
+[1A
+[1A 12%|█▎        | 10/80 [05:13<36:03, 30.91s/it]
+PROGRESS step=11 reward=0.344 frac_reward_zero_std=0.125 level_idx=0.000 reward_at_current_level=0.344 format_ok=0.969 entropy=0.807 mean_length=149.453 clipped_ratio=0.000 step_time=27.977
+[1A 14%|█▍        | 11/80 [05:41<34:41, 30.17s/it]
+[1A                                               
+{'loss': '0.01773', 'grad_norm': '0.3065', 'learning_rate': '2e-05', 'num_tokens': '3.863e+05', 'completions/mean_length': '149.5', 'completions/min_length': '101', 'completions/max_length': '205', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '149.5', 'completions/min_terminated_length': '101', 'completions/max_terminated_length': '205', 'rewards/injection_reward/mean': '0.3438', 'rewards/injection_reward/std': '0.4787', 'reward': '0.3438', 'reward_std': '0.4787', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9688', 'ours/level_idx': '0', 'ours/reward_at_current_level': '0.3438', 'ours/t_reward_s': '8.663', 'entropy': '0.8069', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '27.98', 'epoch': '0.1375'}
+[1A
+[1A 14%|█▍        | 11/80 [05:41<34:41, 30.17s/it]
+PROGRESS step=12 reward=0.562 frac_reward_zero_std=0.250 level_idx=0.000 reward_at_current_level=0.562 format_ok=0.953 entropy=0.801 mean_length=147.516 clipped_ratio=0.000 step_time=28.332
+[1A 15%|█▌        | 12/80 [06:10<33:45, 29.78s/it]
+[1A                                               
+{'loss': '0.02094', 'grad_norm': '0.2904', 'learning_rate': '2e-05', 'num_tokens': '4.215e+05', 'completions/mean_length': '147.5', 'completions/min_length': '90', 'completions/max_length': '225', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '147.5', 'completions/min_terminated_length': '90', 'completions/max_terminated_length': '225', 'rewards/injection_reward/mean': '0.5625', 'rewards/injection_reward/std': '0.5', 'reward': '0.5625', 'reward_std': '0.5', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9531', 'ours/level_idx': '0', 'ours/reward_at_current_level': '0.5625', 'ours/t_reward_s': '7.728', 'entropy': '0.8009', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '28.33', 'epoch': '0.15'}
+[1A
+[1A 15%|█▌        | 12/80 [06:10<33:45, 29.78s/it]
+PROGRESS step=13 reward=0.359 frac_reward_zero_std=0.375 level_idx=1.000 reward_at_current_level=0.359 format_ok=1.000 entropy=0.810 mean_length=138.219 clipped_ratio=0.000 step_time=27.150
+[1A 16%|█▋        | 13/80 [06:38<32:32, 29.15s/it]
+[1A                                               
+{'loss': '-0.0115', 'grad_norm': '0.2982', 'learning_rate': '2e-05', 'num_tokens': '4.555e+05', 'completions/mean_length': '138.2', 'completions/min_length': '99', 'completions/max_length': '206', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '138.2', 'completions/min_terminated_length': '99', 'completions/max_terminated_length': '206', 'rewards/injection_reward/mean': '0.3594', 'rewards/injection_reward/std': '0.4836', 'reward': '0.3594', 'reward_std': '0.4836', 'frac_reward_zero_std': '0.375', 'ours/distinct_completions': '1', 'ours/format_ok': '1', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.3594', 'ours/t_reward_s': '7.993', 'entropy': '0.8099', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '27.15', 'epoch': '0.1625'}
+[1A
+[1A 16%|█▋        | 13/80 [06:38<32:32, 29.15s/it]
+PROGRESS step=14 reward=0.203 frac_reward_zero_std=0.500 level_idx=1.000 reward_at_current_level=0.203 format_ok=0.984 entropy=0.770 mean_length=147.875 clipped_ratio=0.000 step_time=30.503
+[1A 18%|█▊        | 14/80 [07:09<32:42, 29.74s/it]
+[1A                                               
+{'loss': '0.02231', 'grad_norm': '0.2338', 'learning_rate': '2e-05', 'num_tokens': '4.907e+05', 'completions/mean_length': '147.9', 'completions/min_length': '102', 'completions/max_length': '246', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '147.9', 'completions/min_terminated_length': '102', 'completions/max_terminated_length': '246', 'rewards/injection_reward/mean': '0.2031', 'rewards/injection_reward/std': '0.4055', 'reward': '0.2031', 'reward_std': '0.4055', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.2031', 'ours/t_reward_s': '8.407', 'entropy': '0.7696', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.5', 'epoch': '0.175'}
+[1A
+[1A 18%|█▊        | 14/80 [07:09<32:42, 29.74s/it]
+PROGRESS step=15 reward=0.219 frac_reward_zero_std=0.875 level_idx=1.000 reward_at_current_level=0.219 format_ok=0.953 entropy=0.767 mean_length=146.188 clipped_ratio=0.000 step_time=29.003
+[1A 19%|█▉        | 15/80 [07:41<33:03, 30.51s/it]
+[1A                                               
+{'loss': '-0.002539', 'grad_norm': '0.1039', 'learning_rate': '2e-05', 'num_tokens': '5.258e+05', 'completions/mean_length': '146.2', 'completions/min_length': '89', 'completions/max_length': '229', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '146.2', 'completions/min_terminated_length': '89', 'completions/max_terminated_length': '229', 'rewards/injection_reward/mean': '0.2188', 'rewards/injection_reward/std': '0.4167', 'reward': '0.2188', 'reward_std': '0.4167', 'frac_reward_zero_std': '0.875', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9531', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.2188', 'ours/t_reward_s': '7.795', 'entropy': '0.7673', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '29', 'epoch': '0.1875'}
+[1A
+[1A 19%|█▉        | 15/80 [07:41<33:03, 30.51s/it]
+PROGRESS step=16 reward=0.156 frac_reward_zero_std=0.500 level_idx=1.000 reward_at_current_level=0.156 format_ok=0.984 entropy=0.777 mean_length=115.453 clipped_ratio=0.000 step_time=28.200
+[1A 20%|██        | 16/80 [08:10<31:58, 29.98s/it]
+[1A                                               
+{'loss': '0.01876', 'grad_norm': '0.2953', 'learning_rate': '2e-05', 'num_tokens': '5.583e+05', 'completions/mean_length': '115.5', 'completions/min_length': '76', 'completions/max_length': '219', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '115.5', 'completions/min_terminated_length': '76', 'completions/max_terminated_length': '219', 'rewards/injection_reward/mean': '0.1562', 'rewards/injection_reward/std': '0.366', 'reward': '0.1562', 'reward_std': '0.366', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.1562', 'ours/t_reward_s': '8.402', 'entropy': '0.777', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '28.2', 'epoch': '0.2'}
+[1A
+[1A 20%|██        | 16/80 [08:10<31:58, 29.98s/it]
+PROGRESS step=17 reward=0.172 frac_reward_zero_std=0.500 level_idx=1.000 reward_at_current_level=0.071 format_ok=1.000 entropy=0.753 mean_length=138.375 clipped_ratio=0.000 step_time=30.929
+[1A 21%|██▏       | 17/80 [08:41<31:57, 30.44s/it]
+[1A                                               
+{'loss': '-0.0157', 'grad_norm': '0.256', 'learning_rate': '2e-05', 'num_tokens': '5.924e+05', 'completions/mean_length': '138.4', 'completions/min_length': '92', 'completions/max_length': '245', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '138.4', 'completions/min_terminated_length': '92', 'completions/max_terminated_length': '245', 'rewards/injection_reward/mean': '0.1719', 'rewards/injection_reward/std': '0.3803', 'reward': '0.1719', 'reward_std': '0.3803', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '1', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.07143', 'ours/t_reward_s': '8.616', 'entropy': '0.7533', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.93', 'epoch': '0.2125'}
+[1A
+[1A 21%|██▏       | 17/80 [08:41<31:57, 30.44s/it]
+PROGRESS step=18 reward=0.156 frac_reward_zero_std=0.625 level_idx=1.000 reward_at_current_level=0.179 format_ok=0.984 entropy=0.718 mean_length=134.922 clipped_ratio=0.000 step_time=26.291
+[1A 22%|██▎       | 18/80 [09:08<30:19, 29.35s/it]
+[1A                                               
+{'loss': '0.0119', 'grad_norm': '0.2117', 'learning_rate': '2e-05', 'num_tokens': '6.27e+05', 'completions/mean_length': '134.9', 'completions/min_length': '90', 'completions/max_length': '180', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '134.9', 'completions/min_terminated_length': '90', 'completions/max_terminated_length': '180', 'rewards/injection_reward/mean': '0.1562', 'rewards/injection_reward/std': '0.366', 'reward': '0.1562', 'reward_std': '0.366', 'frac_reward_zero_std': '0.625', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.1786', 'ours/t_reward_s': '8.56', 'entropy': '0.7178', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '26.29', 'epoch': '0.225'}
+[1A
+[1A 22%|██▎       | 18/80 [09:08<30:19, 29.35s/it]
+PROGRESS step=19 reward=0.281 frac_reward_zero_std=0.250 level_idx=1.000 reward_at_current_level=0.200 format_ok=1.000 entropy=0.778 mean_length=126.625 clipped_ratio=0.000 step_time=26.121
+[1A 24%|██▍       | 19/80 [09:35<29:00, 28.54s/it]
+[1A                                               
+{'loss': '0.01154', 'grad_norm': '0.3255', 'learning_rate': '2e-05', 'num_tokens': '6.601e+05', 'completions/mean_length': '126.6', 'completions/min_length': '83', 'completions/max_length': '188', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '126.6', 'completions/min_terminated_length': '83', 'completions/max_terminated_length': '188', 'rewards/injection_reward/mean': '0.2812', 'rewards/injection_reward/std': '0.4532', 'reward': '0.2812', 'reward_std': '0.4532', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '1', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.2', 'ours/t_reward_s': '8.124', 'entropy': '0.7776', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '26.12', 'epoch': '0.2375'}
+[1A
+[1A 24%|██▍       | 19/80 [09:35<29:00, 28.54s/it]
+PROGRESS step=20 reward=0.469 frac_reward_zero_std=0.250 level_idx=1.000 reward_at_current_level=0.479 format_ok=0.984 entropy=0.648 mean_length=149.250 clipped_ratio=0.000 step_time=29.451
+[1A 25%|██▌       | 20/80 [10:07<29:42, 29.70s/it]
+[1A                                               
+{'loss': '0.007496', 'grad_norm': '0.2811', 'learning_rate': '2e-05', 'num_tokens': '6.956e+05', 'completions/mean_length': '149.2', 'completions/min_length': '62', 'completions/max_length': '234', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '149.2', 'completions/min_terminated_length': '62', 'completions/max_terminated_length': '234', 'rewards/injection_reward/mean': '0.4688', 'rewards/injection_reward/std': '0.503', 'reward': '0.4688', 'reward_std': '0.503', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.4792', 'ours/t_reward_s': '7.883', 'entropy': '0.6481', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '29.45', 'epoch': '0.25'}
+[1A
+[1A 25%|██▌       | 20/80 [10:07<29:42, 29.70s/it]
+PROGRESS step=21 reward=0.156 frac_reward_zero_std=0.500 level_idx=1.000 reward_at_current_level=0.179 format_ok=0.953 entropy=0.674 mean_length=137.344 clipped_ratio=0.000 step_time=26.333
+[1A 26%|██▋       | 21/80 [10:34<28:22, 28.85s/it]
+[1A                                               
+{'loss': '-0.003567', 'grad_norm': '0.2332', 'learning_rate': '2e-05', 'num_tokens': '7.304e+05', 'completions/mean_length': '137.3', 'completions/min_length': '102', 'completions/max_length': '195', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '137.3', 'completions/min_terminated_length': '102', 'completions/max_terminated_length': '195', 'rewards/injection_reward/mean': '0.1562', 'rewards/injection_reward/std': '0.366', 'reward': '0.1562', 'reward_std': '0.366', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9531', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.1786', 'ours/t_reward_s': '7.851', 'entropy': '0.674', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '26.33', 'epoch': '0.2625'}
+[1A
+[1A 26%|██▋       | 21/80 [10:34<28:22, 28.85s/it]
+PROGRESS step=22 reward=0.203 frac_reward_zero_std=0.750 level_idx=1.000 reward_at_current_level=0.104 format_ok=0.984 entropy=0.642 mean_length=144.469 clipped_ratio=0.000 step_time=29.093
+[1A 28%|██▊       | 22/80 [11:04<28:07, 29.09s/it]
+[1A                                               
+{'loss': '-0.005204', 'grad_norm': '0.1438', 'learning_rate': '2e-05', 'num_tokens': '7.654e+05', 'completions/mean_length': '144.5', 'completions/min_length': '94', 'completions/max_length': '228', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '144.5', 'completions/min_terminated_length': '94', 'completions/max_terminated_length': '228', 'rewards/injection_reward/mean': '0.2031', 'rewards/injection_reward/std': '0.4055', 'reward': '0.2031', 'reward_std': '0.4055', 'frac_reward_zero_std': '0.75', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.1042', 'ours/t_reward_s': '8.201', 'entropy': '0.642', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '29.09', 'epoch': '0.275'}
+[1A
+[1A 28%|██▊       | 22/80 [11:04<28:07, 29.09s/it]
+PROGRESS step=23 reward=0.406 frac_reward_zero_std=0.500 level_idx=1.000 reward_at_current_level=0.321 format_ok=1.000 entropy=0.709 mean_length=131.328 clipped_ratio=0.000 step_time=26.922
+[1A 29%|██▉       | 23/80 [11:31<27:10, 28.60s/it]
+[1A                                               
+{'loss': '-0.007867', 'grad_norm': '0.2574', 'learning_rate': '2e-05', 'num_tokens': '7.989e+05', 'completions/mean_length': '131.3', 'completions/min_length': '87', 'completions/max_length': '197', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '131.3', 'completions/min_terminated_length': '87', 'completions/max_terminated_length': '197', 'rewards/injection_reward/mean': '0.4062', 'rewards/injection_reward/std': '0.495', 'reward': '0.4062', 'reward_std': '0.495', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '1', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.3214', 'ours/t_reward_s': '8.29', 'entropy': '0.7091', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '26.92', 'epoch': '0.2875'}
+[1A
+[1A 29%|██▉       | 23/80 [11:31<27:10, 28.60s/it]
+PROGRESS step=24 reward=0.188 frac_reward_zero_std=0.500 level_idx=1.000 reward_at_current_level=0.188 format_ok=0.984 entropy=0.713 mean_length=135.969 clipped_ratio=0.000 step_time=28.856
+[1A 30%|███       | 24/80 [12:01<26:55, 28.84s/it]
+[1A                                               
+{'loss': '-0.01568', 'grad_norm': '0.2683', 'learning_rate': '2e-05', 'num_tokens': '8.33e+05', 'completions/mean_length': '136', 'completions/min_length': '91', 'completions/max_length': '222', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '136', 'completions/min_terminated_length': '91', 'completions/max_terminated_length': '222', 'rewards/injection_reward/mean': '0.1875', 'rewards/injection_reward/std': '0.3934', 'reward': '0.1875', 'reward_std': '0.3934', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.1875', 'ours/t_reward_s': '8.699', 'entropy': '0.713', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '28.86', 'epoch': '0.3'}
+[1A
+[1A 30%|███       | 24/80 [12:01<26:55, 28.84s/it]CANARY {'step': 25, 'canary_pass@1_L2': 0.21875, 'canary_format_ok': 0.953125}
+
+PROGRESS step=25 reward=0.156 frac_reward_zero_std=0.375 level_idx=1.000 reward_at_current_level=0.156 format_ok=0.953 entropy=0.706 mean_length=134.688 clipped_ratio=0.000 step_time=28.677
+[1A 31%|███▏      | 25/80 [13:24<41:24, 45.17s/it]
+[1A                                               
+{'loss': '-0.01349', 'grad_norm': '0.2909', 'learning_rate': '2e-05', 'num_tokens': '8.668e+05', 'completions/mean_length': '134.7', 'completions/min_length': '94', 'completions/max_length': '234', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '134.7', 'completions/min_terminated_length': '94', 'completions/max_terminated_length': '234', 'rewards/injection_reward/mean': '0.1562', 'rewards/injection_reward/std': '0.366', 'reward': '0.1562', 'reward_std': '0.366', 'frac_reward_zero_std': '0.375', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9531', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.1562', 'ours/t_reward_s': '7.696', 'entropy': '0.7061', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '28.68', 'epoch': '0.3125'}
+[1A
+[1A 31%|███▏      | 25/80 [13:24<41:24, 45.17s/it]
+PROGRESS step=26 reward=0.188 frac_reward_zero_std=0.500 level_idx=1.000 reward_at_current_level=0.188 format_ok=0.984 entropy=0.645 mean_length=145.234 clipped_ratio=0.000 step_time=27.725
+[1A 32%|███▎      | 26/80 [13:53<36:16, 40.31s/it]
+[1A                                               
+{'loss': '-0.001285', 'grad_norm': '0.2391', 'learning_rate': '2e-05', 'num_tokens': '9.022e+05', 'completions/mean_length': '145.2', 'completions/min_length': '101', 'completions/max_length': '215', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '145.2', 'completions/min_terminated_length': '101', 'completions/max_terminated_length': '215', 'rewards/injection_reward/mean': '0.1875', 'rewards/injection_reward/std': '0.3934', 'reward': '0.1875', 'reward_std': '0.3934', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.1875', 'ours/t_reward_s': '7.972', 'entropy': '0.6453', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '27.73', 'epoch': '0.325'}
+[1A
+[1A 32%|███▎      | 26/80 [13:53<36:16, 40.31s/it]
+PROGRESS step=27 reward=0.516 frac_reward_zero_std=0.375 level_idx=1.000 reward_at_current_level=0.375 format_ok=0.969 entropy=0.650 mean_length=137.625 clipped_ratio=0.000 step_time=29.307
+[1A 34%|███▍      | 27/80 [14:23<32:50, 37.19s/it]
+[1A                                               
+{'loss': '-0.002949', 'grad_norm': '0.2817', 'learning_rate': '2e-05', 'num_tokens': '9.366e+05', 'completions/mean_length': '137.6', 'completions/min_length': '90', 'completions/max_length': '229', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '137.6', 'completions/min_terminated_length': '90', 'completions/max_terminated_length': '229', 'rewards/injection_reward/mean': '0.5156', 'rewards/injection_reward/std': '0.5037', 'reward': '0.5156', 'reward_std': '0.5037', 'frac_reward_zero_std': '0.375', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9688', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.375', 'ours/t_reward_s': '7.87', 'entropy': '0.6497', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '29.31', 'epoch': '0.3375'}
+[1A
+[1A 34%|███▍      | 27/80 [14:23<32:50, 37.19s/it]
+PROGRESS step=28 reward=0.188 frac_reward_zero_std=0.250 level_idx=1.000 reward_at_current_level=0.146 format_ok=0.984 entropy=0.624 mean_length=136.531 clipped_ratio=0.000 step_time=29.311
+[1A 35%|███▌      | 28/80 [14:53<30:19, 34.99s/it]
+[1A                                               
+{'loss': '0.0005852', 'grad_norm': '0.3135', 'learning_rate': '2e-05', 'num_tokens': '9.707e+05', 'completions/mean_length': '136.5', 'completions/min_length': '83', 'completions/max_length': '226', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '136.5', 'completions/min_terminated_length': '83', 'completions/max_terminated_length': '226', 'rewards/injection_reward/mean': '0.1875', 'rewards/injection_reward/std': '0.3934', 'reward': '0.1875', 'reward_std': '0.3934', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.1458', 'ours/t_reward_s': '8.948', 'entropy': '0.6243', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '29.31', 'epoch': '0.35'}
+[1A
+[1A 35%|███▌      | 28/80 [14:53<30:19, 34.99s/it]
+PROGRESS step=29 reward=0.344 frac_reward_zero_std=0.000 level_idx=1.000 reward_at_current_level=0.400 format_ok=1.000 entropy=0.621 mean_length=147.750 clipped_ratio=0.000 step_time=27.519
+[1A 36%|███▋      | 29/80 [15:21<27:58, 32.91s/it]
+[1A                                               
+{'loss': '-0.03445', 'grad_norm': '0.3601', 'learning_rate': '2e-05', 'num_tokens': '1.006e+06', 'completions/mean_length': '147.8', 'completions/min_length': '90', 'completions/max_length': '207', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '147.8', 'completions/min_terminated_length': '90', 'completions/max_terminated_length': '207', 'rewards/injection_reward/mean': '0.3438', 'rewards/injection_reward/std': '0.4787', 'reward': '0.3438', 'reward_std': '0.4787', 'frac_reward_zero_std': '0', 'ours/distinct_completions': '1', 'ours/format_ok': '1', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.4', 'ours/t_reward_s': '8.068', 'entropy': '0.6211', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '27.52', 'epoch': '0.3625'}
+[1A
+[1A 36%|███▋      | 29/80 [15:21<27:58, 32.91s/it]
+PROGRESS step=30 reward=0.297 frac_reward_zero_std=0.250 level_idx=1.000 reward_at_current_level=0.219 format_ok=0.953 entropy=0.698 mean_length=140.469 clipped_ratio=0.000 step_time=30.276
+[1A 38%|███▊      | 30/80 [15:54<27:33, 33.06s/it]
+[1A                                               
+{'loss': '-0.01566', 'grad_norm': '0.3339', 'learning_rate': '2e-05', 'num_tokens': '1.041e+06', 'completions/mean_length': '140.5', 'completions/min_length': '86', 'completions/max_length': '248', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '140.5', 'completions/min_terminated_length': '86', 'completions/max_terminated_length': '248', 'rewards/injection_reward/mean': '0.2969', 'rewards/injection_reward/std': '0.4605', 'reward': '0.2969', 'reward_std': '0.4605', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9531', 'ours/level_idx': '1', 'ours/reward_at_current_level': '0.2188', 'ours/t_reward_s': '8.06', 'entropy': '0.6977', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.28', 'epoch': '0.375'}
+[1A
+[1A 38%|███▊      | 30/80 [15:54<27:33, 33.06s/it]
+PROGRESS step=31 reward=0.562 frac_reward_zero_std=0.125 level_idx=2.000 reward_at_current_level=0.656 format_ok=1.000 entropy=0.668 mean_length=147.812 clipped_ratio=0.000 step_time=26.679
+[1A 39%|███▉      | 31/80 [16:21<25:34, 31.31s/it]
+[1A                                               
+{'loss': '0.00806', 'grad_norm': '0.331', 'learning_rate': '2e-05', 'num_tokens': '1.076e+06', 'completions/mean_length': '147.8', 'completions/min_length': '104', 'completions/max_length': '208', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '147.8', 'completions/min_terminated_length': '104', 'completions/max_terminated_length': '208', 'rewards/injection_reward/mean': '0.5625', 'rewards/injection_reward/std': '0.5', 'reward': '0.5625', 'reward_std': '0.5', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '1', 'ours/level_idx': '2', 'ours/reward_at_current_level': '0.6562', 'ours/t_reward_s': '7.502', 'entropy': '0.6677', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '26.68', 'epoch': '0.3875'}
+[1A
+[1A 39%|███▉      | 31/80 [16:21<25:34, 31.31s/it]
+PROGRESS step=32 reward=0.266 frac_reward_zero_std=0.250 level_idx=2.000 reward_at_current_level=0.312 format_ok=0.953 entropy=0.699 mean_length=128.406 clipped_ratio=0.000 step_time=25.862
+[1A 40%|████      | 32/80 [16:48<23:51, 29.83s/it]
+[1A                                               
+{'loss': '-0.0001176', 'grad_norm': '0.3084', 'learning_rate': '2e-05', 'num_tokens': '1.109e+06', 'completions/mean_length': '128.4', 'completions/min_length': '92', 'completions/max_length': '183', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '128.4', 'completions/min_terminated_length': '92', 'completions/max_terminated_length': '183', 'rewards/injection_reward/mean': '0.2656', 'rewards/injection_reward/std': '0.4452', 'reward': '0.2656', 'reward_std': '0.4452', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9531', 'ours/level_idx': '2', 'ours/reward_at_current_level': '0.3125', 'ours/t_reward_s': '8.304', 'entropy': '0.6994', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '25.86', 'epoch': '0.4'}
+[1A
+[1A 40%|████      | 32/80 [16:48<23:51, 29.83s/it]
+PROGRESS step=33 reward=0.141 frac_reward_zero_std=0.250 level_idx=2.000 reward_at_current_level=0.188 format_ok=0.984 entropy=0.666 mean_length=146.984 clipped_ratio=0.016 step_time=31.554
+[1A 41%|████▏     | 33/80 [17:20<23:54, 30.53s/it]
+[1A                                               
+{'loss': '-0.02425', 'grad_norm': '0.2973', 'learning_rate': '2e-05', 'num_tokens': '1.144e+06', 'completions/mean_length': '147', 'completions/min_length': '97', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '145.3', 'completions/min_terminated_length': '97', 'completions/max_terminated_length': '255', 'rewards/injection_reward/mean': '0.1406', 'rewards/injection_reward/std': '0.3504', 'reward': '0.1406', 'reward_std': '0.3504', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '2', 'ours/reward_at_current_level': '0.1875', 'ours/t_reward_s': '8.604', 'entropy': '0.6656', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.55', 'epoch': '0.4125'}
+[1A
+[1A 41%|████▏     | 33/80 [17:20<23:54, 30.53s/it]
+PROGRESS step=34 reward=0.422 frac_reward_zero_std=0.375 level_idx=2.000 reward_at_current_level=0.422 format_ok=0.938 entropy=0.620 mean_length=145.906 clipped_ratio=0.000 step_time=28.514
+[1A 42%|████▎     | 34/80 [17:49<23:04, 30.09s/it]
+[1A                                               
+{'loss': '0.01555', 'grad_norm': '0.2955', 'learning_rate': '2e-05', 'num_tokens': '1.179e+06', 'completions/mean_length': '145.9', 'completions/min_length': '109', 'completions/max_length': '233', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '145.9', 'completions/min_terminated_length': '109', 'completions/max_terminated_length': '233', 'rewards/injection_reward/mean': '0.4219', 'rewards/injection_reward/std': '0.4978', 'reward': '0.4219', 'reward_std': '0.4978', 'frac_reward_zero_std': '0.375', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9375', 'ours/level_idx': '2', 'ours/reward_at_current_level': '0.4219', 'ours/t_reward_s': '7.434', 'entropy': '0.6204', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '28.51', 'epoch': '0.425'}
+[1A
+[1A 42%|████▎     | 34/80 [17:49<23:04, 30.09s/it]
+PROGRESS step=35 reward=0.188 frac_reward_zero_std=0.500 level_idx=2.000 reward_at_current_level=0.275 format_ok=0.984 entropy=0.607 mean_length=155.094 clipped_ratio=0.000 step_time=30.196
+[1A 44%|████▍     | 35/80 [18:22<23:18, 31.07s/it]
+[1A                                               
+{'loss': '-0.008794', 'grad_norm': '0.2259', 'learning_rate': '2e-05', 'num_tokens': '1.215e+06', 'completions/mean_length': '155.1', 'completions/min_length': '103', 'completions/max_length': '239', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '155.1', 'completions/min_terminated_length': '103', 'completions/max_terminated_length': '239', 'rewards/injection_reward/mean': '0.1875', 'rewards/injection_reward/std': '0.3934', 'reward': '0.1875', 'reward_std': '0.3934', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '2', 'ours/reward_at_current_level': '0.275', 'ours/t_reward_s': '8.265', 'entropy': '0.6074', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.2', 'epoch': '0.4375'}
+[1A
+[1A 44%|████▍     | 35/80 [18:22<23:18, 31.07s/it]
+PROGRESS step=36 reward=0.250 frac_reward_zero_std=0.625 level_idx=2.000 reward_at_current_level=0.250 format_ok=0.984 entropy=0.611 mean_length=135.578 clipped_ratio=0.000 step_time=27.928
+[1A 45%|████▌     | 36/80 [18:51<22:12, 30.29s/it]
+[1A                                               
+{'loss': '-0.01159', 'grad_norm': '0.2481', 'learning_rate': '2e-05', 'num_tokens': '1.249e+06', 'completions/mean_length': '135.6', 'completions/min_length': '105', 'completions/max_length': '215', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '135.6', 'completions/min_terminated_length': '105', 'completions/max_terminated_length': '215', 'rewards/injection_reward/mean': '0.25', 'rewards/injection_reward/std': '0.4364', 'reward': '0.25', 'reward_std': '0.4364', 'frac_reward_zero_std': '0.625', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '2', 'ours/reward_at_current_level': '0.25', 'ours/t_reward_s': '8.278', 'entropy': '0.6109', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '27.93', 'epoch': '0.45'}
+[1A
+[1A 45%|████▌     | 36/80 [18:51<22:12, 30.29s/it]
+PROGRESS step=37 reward=0.422 frac_reward_zero_std=0.250 level_idx=3.000 reward_at_current_level=0.525 format_ok=0.984 entropy=0.663 mean_length=140.219 clipped_ratio=0.000 step_time=29.791
+[1A 46%|████▋     | 37/80 [19:21<21:43, 30.31s/it]
+[1A                                               
+{'loss': '0.002265', 'grad_norm': '0.3386', 'learning_rate': '2e-05', 'num_tokens': '1.283e+06', 'completions/mean_length': '140.2', 'completions/min_length': '95', 'completions/max_length': '236', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '140.2', 'completions/min_terminated_length': '95', 'completions/max_terminated_length': '236', 'rewards/injection_reward/mean': '0.4219', 'rewards/injection_reward/std': '0.4978', 'reward': '0.4219', 'reward_std': '0.4978', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.525', 'ours/t_reward_s': '8.587', 'entropy': '0.663', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '29.79', 'epoch': '0.4625'}
+[1A
+[1A 46%|████▋     | 37/80 [19:21<21:43, 30.31s/it]
+PROGRESS step=38 reward=0.297 frac_reward_zero_std=0.375 level_idx=3.000 reward_at_current_level=0.321 format_ok=0.969 entropy=0.641 mean_length=151.250 clipped_ratio=0.031 step_time=31.257
+[1A 48%|████▊     | 38/80 [19:53<21:32, 30.78s/it]
+[1A                                               
+{'loss': '0.0007514', 'grad_norm': '0.2802', 'learning_rate': '2e-05', 'num_tokens': '1.318e+06', 'completions/mean_length': '151.2', 'completions/min_length': '105', 'completions/max_length': '256', 'completions/clipped_ratio': '0.03125', 'completions/mean_terminated_length': '147.9', 'completions/min_terminated_length': '105', 'completions/max_terminated_length': '233', 'rewards/injection_reward/mean': '0.2969', 'rewards/injection_reward/std': '0.4605', 'reward': '0.2969', 'reward_std': '0.4605', 'frac_reward_zero_std': '0.375', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9688', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.3214', 'ours/t_reward_s': '8.212', 'entropy': '0.6407', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.26', 'epoch': '0.475'}
+[1A
+[1A 48%|████▊     | 38/80 [19:53<21:32, 30.78s/it]
+PROGRESS step=39 reward=0.250 frac_reward_zero_std=0.250 level_idx=3.000 reward_at_current_level=0.214 format_ok=0.969 entropy=0.628 mean_length=146.469 clipped_ratio=0.016 step_time=30.703
+[1A 49%|████▉     | 39/80 [20:24<21:08, 30.93s/it]
+[1A                                               
+{'loss': '0.005515', 'grad_norm': '0.3445', 'learning_rate': '2e-05', 'num_tokens': '1.353e+06', 'completions/mean_length': '146.5', 'completions/min_length': '90', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '144.7', 'completions/min_terminated_length': '90', 'completions/max_terminated_length': '213', 'rewards/injection_reward/mean': '0.25', 'rewards/injection_reward/std': '0.4364', 'reward': '0.25', 'reward_std': '0.4364', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9688', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.2143', 'ours/t_reward_s': '7.956', 'entropy': '0.6275', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.7', 'epoch': '0.4875'}
+[1A
+[1A 49%|████▉     | 39/80 [20:24<21:08, 30.93s/it]
+PROGRESS step=40 reward=0.312 frac_reward_zero_std=0.500 level_idx=3.000 reward_at_current_level=0.357 format_ok=0.984 entropy=0.588 mean_length=162.797 clipped_ratio=0.016 step_time=30.738
+[1A 50%|█████     | 40/80 [20:58<21:14, 31.86s/it]
+[1A                                               
+{'loss': '0.04711', 'grad_norm': '0.2985', 'learning_rate': '2e-05', 'num_tokens': '1.389e+06', 'completions/mean_length': '162.8', 'completions/min_length': '93', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '161.3', 'completions/min_terminated_length': '93', 'completions/max_terminated_length': '249', 'rewards/injection_reward/mean': '0.3125', 'rewards/injection_reward/std': '0.4672', 'reward': '0.3125', 'reward_std': '0.4672', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.3571', 'ours/t_reward_s': '8.034', 'entropy': '0.5885', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.74', 'epoch': '0.5'}
+[1A
+[1A 50%|█████     | 40/80 [20:58<21:14, 31.86s/it]
+PROGRESS step=41 reward=0.297 frac_reward_zero_std=0.375 level_idx=3.000 reward_at_current_level=0.250 format_ok=0.969 entropy=0.574 mean_length=152.969 clipped_ratio=0.016 step_time=31.271
+[1A 51%|█████▏    | 41/80 [21:30<20:42, 31.86s/it]
+[1A                                               
+{'loss': '-0.003738', 'grad_norm': '0.2961', 'learning_rate': '2e-05', 'num_tokens': '1.424e+06', 'completions/mean_length': '153', 'completions/min_length': '106', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '151.3', 'completions/min_terminated_length': '106', 'completions/max_terminated_length': '227', 'rewards/injection_reward/mean': '0.2969', 'rewards/injection_reward/std': '0.4605', 'reward': '0.2969', 'reward_std': '0.4605', 'frac_reward_zero_std': '0.375', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9688', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.25', 'ours/t_reward_s': '8.152', 'entropy': '0.574', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.27', 'epoch': '0.5125'}
+[1A
+[1A 51%|█████▏    | 41/80 [21:30<20:42, 31.86s/it]
+PROGRESS step=42 reward=0.391 frac_reward_zero_std=0.375 level_idx=3.000 reward_at_current_level=0.425 format_ok=0.984 entropy=0.579 mean_length=161.672 clipped_ratio=0.016 step_time=32.325
+[1A 52%|█████▎    | 42/80 [22:03<20:22, 32.18s/it]
+[1A                                               
+{'loss': '-0.02596', 'grad_norm': '0.3046', 'learning_rate': '2e-05', 'num_tokens': '1.459e+06', 'completions/mean_length': '161.7', 'completions/min_length': '103', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '160.2', 'completions/min_terminated_length': '103', 'completions/max_terminated_length': '251', 'rewards/injection_reward/mean': '0.3906', 'rewards/injection_reward/std': '0.4917', 'reward': '0.3906', 'reward_std': '0.4917', 'frac_reward_zero_std': '0.375', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.425', 'ours/t_reward_s': '9.228', 'entropy': '0.579', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '32.32', 'epoch': '0.525'}
+[1A
+[1A 52%|█████▎    | 42/80 [22:03<20:22, 32.18s/it]
+PROGRESS step=43 reward=0.500 frac_reward_zero_std=0.250 level_idx=3.000 reward_at_current_level=0.562 format_ok=0.984 entropy=0.591 mean_length=152.094 clipped_ratio=0.016 step_time=30.752
+[1A 54%|█████▍    | 43/80 [22:35<19:41, 31.93s/it]
+[1A                                               
+{'loss': '0.01851', 'grad_norm': '0.3539', 'learning_rate': '2e-05', 'num_tokens': '1.494e+06', 'completions/mean_length': '152.1', 'completions/min_length': '109', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '150.4', 'completions/min_terminated_length': '109', 'completions/max_terminated_length': '233', 'rewards/injection_reward/mean': '0.5', 'rewards/injection_reward/std': '0.504', 'reward': '0.5', 'reward_std': '0.504', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.5625', 'ours/t_reward_s': '8.139', 'entropy': '0.5908', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.75', 'epoch': '0.5375'}
+[1A
+[1A 54%|█████▍    | 43/80 [22:35<19:41, 31.93s/it]
+PROGRESS step=44 reward=0.281 frac_reward_zero_std=0.375 level_idx=3.000 reward_at_current_level=0.321 format_ok=1.000 entropy=0.584 mean_length=166.344 clipped_ratio=0.000 step_time=31.734
+[1A 55%|█████▌    | 44/80 [23:07<19:13, 32.05s/it]
+[1A                                               
+{'loss': '-0.01863', 'grad_norm': '0.2847', 'learning_rate': '2e-05', 'num_tokens': '1.53e+06', 'completions/mean_length': '166.3', 'completions/min_length': '111', 'completions/max_length': '248', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '166.3', 'completions/min_terminated_length': '111', 'completions/max_terminated_length': '248', 'rewards/injection_reward/mean': '0.2812', 'rewards/injection_reward/std': '0.4532', 'reward': '0.2812', 'reward_std': '0.4532', 'frac_reward_zero_std': '0.375', 'ours/distinct_completions': '1', 'ours/format_ok': '1', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.3214', 'ours/t_reward_s': '9.227', 'entropy': '0.5844', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.73', 'epoch': '0.55'}
+[1A
+[1A 55%|█████▌    | 44/80 [23:07<19:13, 32.05s/it]
+PROGRESS step=45 reward=0.328 frac_reward_zero_std=0.375 level_idx=3.000 reward_at_current_level=0.400 format_ok=0.953 entropy=0.548 mean_length=177.812 clipped_ratio=0.047 step_time=31.760
+[1A 56%|█████▋    | 45/80 [23:44<19:31, 33.46s/it]
+[1A                                               
+{'loss': '0.008899', 'grad_norm': '0.2679', 'learning_rate': '2e-05', 'num_tokens': '1.567e+06', 'completions/mean_length': '177.8', 'completions/min_length': '117', 'completions/max_length': '256', 'completions/clipped_ratio': '0.04688', 'completions/mean_terminated_length': '174', 'completions/min_terminated_length': '117', 'completions/max_terminated_length': '252', 'rewards/injection_reward/mean': '0.3281', 'rewards/injection_reward/std': '0.4732', 'reward': '0.3281', 'reward_std': '0.4732', 'frac_reward_zero_std': '0.375', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9531', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.4', 'ours/t_reward_s': '8.614', 'entropy': '0.5478', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.76', 'epoch': '0.5625'}
+[1A
+[1A 56%|█████▋    | 45/80 [23:44<19:31, 33.46s/it]
+PROGRESS step=46 reward=0.250 frac_reward_zero_std=0.375 level_idx=3.000 reward_at_current_level=0.250 format_ok=0.953 entropy=0.552 mean_length=166.953 clipped_ratio=0.000 step_time=30.442
+[1A 57%|█████▊    | 46/80 [24:15<18:32, 32.73s/it]
+[1A                                               
+{'loss': '-0.02163', 'grad_norm': '0.3099', 'learning_rate': '2e-05', 'num_tokens': '1.603e+06', 'completions/mean_length': '167', 'completions/min_length': '109', 'completions/max_length': '243', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '167', 'completions/min_terminated_length': '109', 'completions/max_terminated_length': '243', 'rewards/injection_reward/mean': '0.25', 'rewards/injection_reward/std': '0.4364', 'reward': '0.25', 'reward_std': '0.4364', 'frac_reward_zero_std': '0.375', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9531', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.25', 'ours/t_reward_s': '8.399', 'entropy': '0.552', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.44', 'epoch': '0.575'}
+[1A
+[1A 57%|█████▊    | 46/80 [24:15<18:32, 32.73s/it]
+PROGRESS step=47 reward=0.328 frac_reward_zero_std=0.500 level_idx=3.000 reward_at_current_level=0.175 format_ok=0.953 entropy=0.562 mean_length=167.031 clipped_ratio=0.016 step_time=31.445
+[1A 59%|█████▉    | 47/80 [24:47<17:53, 32.53s/it]
+[1A                                               
+{'loss': '-0.01407', 'grad_norm': '0.3012', 'learning_rate': '2e-05', 'num_tokens': '1.639e+06', 'completions/mean_length': '167', 'completions/min_length': '107', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '165.6', 'completions/min_terminated_length': '107', 'completions/max_terminated_length': '232', 'rewards/injection_reward/mean': '0.3281', 'rewards/injection_reward/std': '0.4732', 'reward': '0.3281', 'reward_std': '0.4732', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9531', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.175', 'ours/t_reward_s': '8.507', 'entropy': '0.562', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.45', 'epoch': '0.5875'}
+[1A
+[1A 59%|█████▉    | 47/80 [24:47<17:53, 32.53s/it]
+PROGRESS step=48 reward=0.547 frac_reward_zero_std=0.125 level_idx=3.000 reward_at_current_level=0.479 format_ok=0.938 entropy=0.502 mean_length=179.828 clipped_ratio=0.078 step_time=31.395
+[1A 60%|██████    | 48/80 [25:19<17:15, 32.37s/it]
+[1A                                               
+{'loss': '0.01802', 'grad_norm': '0.3317', 'learning_rate': '2e-05', 'num_tokens': '1.676e+06', 'completions/mean_length': '179.8', 'completions/min_length': '112', 'completions/max_length': '256', 'completions/clipped_ratio': '0.07812', 'completions/mean_terminated_length': '173.4', 'completions/min_terminated_length': '112', 'completions/max_terminated_length': '243', 'rewards/injection_reward/mean': '0.5469', 'rewards/injection_reward/std': '0.5017', 'reward': '0.5469', 'reward_std': '0.5017', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9375', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.4792', 'ours/t_reward_s': '7.995', 'entropy': '0.5017', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.4', 'epoch': '0.6'}
+[1A
+[1A 60%|██████    | 48/80 [25:19<17:15, 32.37s/it]
+[1A 61%|██████▏   | 49/80 [25:51<16:41, 32.31s/it]PROGRESS step=49 reward=0.344 frac_reward_zero_std=0.125 level_idx=3.000 reward_at_current_level=0.500 format_ok=0.875 entropy=0.534 mean_length=191.297 clipped_ratio=0.125 step_time=31.581
+
+[1A                                               
+{'loss': '0.04907', 'grad_norm': '0.2981', 'learning_rate': '2e-05', 'num_tokens': '1.714e+06', 'completions/mean_length': '191.3', 'completions/min_length': '124', 'completions/max_length': '256', 'completions/clipped_ratio': '0.125', 'completions/mean_terminated_length': '182.1', 'completions/min_terminated_length': '124', 'completions/max_terminated_length': '253', 'rewards/injection_reward/mean': '0.3438', 'rewards/injection_reward/std': '0.4787', 'reward': '0.3438', 'reward_std': '0.4787', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.875', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.5', 'ours/t_reward_s': '8.452', 'entropy': '0.5335', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.58', 'epoch': '0.6125'}
+[1A
+PROGRESS step=49 reward=0.344 frac_reward_zero_std=0.125 level_idx=3.000 reward_at_current_level=0.500 format_ok=0.875 entropy=0.534 mean_length=191.297 clipped_ratio=0.125 step_time=31.581
+[1A 61%|██████▏   | 49/80 [25:51<16:41, 32.31s/it]
+[1A                                               
+{'loss': '0.04907', 'grad_norm': '0.2981', 'learning_rate': '2e-05', 'num_tokens': '1.714e+06', 'completions/mean_length': '191.3', 'completions/min_length': '124', 'completions/max_length': '256', 'completions/clipped_ratio': '0.125', 'completions/mean_terminated_length': '182.1', 'completions/min_terminated_length': '124', 'completions/max_terminated_length': '253', 'rewards/injection_reward/mean': '0.3438', 'rewards/injection_reward/std': '0.4787', 'reward': '0.3438', 'reward_std': '0.4787', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.875', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.5', 'ours/t_reward_s': '8.452', 'entropy': '0.5335', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.58', 'epoch': '0.6125'}
+[1A
+[1A 61%|██████▏   | 49/80 [25:51<16:41, 32.31s/it]CANARY {'step': 50, 'canary_pass@1_L2': 0.5859375, 'canary_format_ok': 0.84375}
+
+PROGRESS step=50 reward=0.453 frac_reward_zero_std=0.125 level_idx=3.000 reward_at_current_level=0.375 format_ok=0.906 entropy=0.578 mean_length=190.797 clipped_ratio=0.078 step_time=31.310
+[1A 62%|██████▎   | 50/80 [27:29<26:01, 52.06s/it]
+[1A                                               
+{'loss': '0.001908', 'grad_norm': '0.3601', 'learning_rate': '2e-05', 'num_tokens': '1.752e+06', 'completions/mean_length': '190.8', 'completions/min_length': '124', 'completions/max_length': '256', 'completions/clipped_ratio': '0.07812', 'completions/mean_terminated_length': '185.3', 'completions/min_terminated_length': '124', 'completions/max_terminated_length': '249', 'rewards/injection_reward/mean': '0.4531', 'rewards/injection_reward/std': '0.5017', 'reward': '0.4531', 'reward_std': '0.5017', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9062', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.375', 'ours/t_reward_s': '8.648', 'entropy': '0.578', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.31', 'epoch': '0.625'}
+[1A
+[1A 62%|██████▎   | 50/80 [27:29<26:01, 52.06s/it]
+PROGRESS step=51 reward=0.297 frac_reward_zero_std=0.125 level_idx=3.000 reward_at_current_level=0.297 format_ok=0.906 entropy=0.498 mean_length=184.203 clipped_ratio=0.094 step_time=31.022
+[1A 64%|██████▍   | 51/80 [28:01<22:17, 46.14s/it]
+[1A                                               
+{'loss': '0.002644', 'grad_norm': '0.3619', 'learning_rate': '2e-05', 'num_tokens': '1.789e+06', 'completions/mean_length': '184.2', 'completions/min_length': '103', 'completions/max_length': '256', 'completions/clipped_ratio': '0.09375', 'completions/mean_terminated_length': '176.8', 'completions/min_terminated_length': '103', 'completions/max_terminated_length': '254', 'rewards/injection_reward/mean': '0.2969', 'rewards/injection_reward/std': '0.4605', 'reward': '0.2969', 'reward_std': '0.4605', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9062', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.2969', 'ours/t_reward_s': '8.195', 'entropy': '0.4978', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.02', 'epoch': '0.6375'}
+[1A
+[1A 64%|██████▍   | 51/80 [28:01<22:17, 46.14s/it]
+PROGRESS step=52 reward=0.531 frac_reward_zero_std=0.250 level_idx=3.000 reward_at_current_level=0.594 format_ok=0.938 entropy=0.481 mean_length=179.766 clipped_ratio=0.062 step_time=31.377
+[1A 65%|██████▌   | 52/80 [28:33<19:32, 41.89s/it]
+[1A                                               
+{'loss': '0.0006669', 'grad_norm': '0.337', 'learning_rate': '2e-05', 'num_tokens': '1.826e+06', 'completions/mean_length': '179.8', 'completions/min_length': '118', 'completions/max_length': '256', 'completions/clipped_ratio': '0.0625', 'completions/mean_terminated_length': '174.7', 'completions/min_terminated_length': '118', 'completions/max_terminated_length': '241', 'rewards/injection_reward/mean': '0.5312', 'rewards/injection_reward/std': '0.503', 'reward': '0.5312', 'reward_std': '0.503', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9375', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.5938', 'ours/t_reward_s': '8.471', 'entropy': '0.4806', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.38', 'epoch': '0.65'}
+[1A
+[1A 65%|██████▌   | 52/80 [28:33<19:32, 41.89s/it]
+PROGRESS step=53 reward=0.281 frac_reward_zero_std=0.000 level_idx=3.000 reward_at_current_level=0.281 format_ok=0.922 entropy=0.553 mean_length=184.594 clipped_ratio=0.078 step_time=31.229
+[1A 66%|██████▋   | 53/80 [29:05<17:29, 38.87s/it]
+[1A                                               
+{'loss': '-0.02416', 'grad_norm': '0.3775', 'learning_rate': '2e-05', 'num_tokens': '1.863e+06', 'completions/mean_length': '184.6', 'completions/min_length': '122', 'completions/max_length': '256', 'completions/clipped_ratio': '0.07812', 'completions/mean_terminated_length': '178.5', 'completions/min_terminated_length': '122', 'completions/max_terminated_length': '255', 'rewards/injection_reward/mean': '0.2812', 'rewards/injection_reward/std': '0.4532', 'reward': '0.2812', 'reward_std': '0.4532', 'frac_reward_zero_std': '0', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9219', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.2812', 'ours/t_reward_s': '8.388', 'entropy': '0.5527', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.23', 'epoch': '0.6625'}
+[1A
+[1A 66%|██████▋   | 53/80 [29:05<17:29, 38.87s/it]
+PROGRESS step=54 reward=0.453 frac_reward_zero_std=0.125 level_idx=3.000 reward_at_current_level=0.375 format_ok=0.859 entropy=0.550 mean_length=205.141 clipped_ratio=0.156 step_time=31.315
+[1A 68%|██████▊   | 54/80 [29:37<15:56, 36.78s/it]
+[1A                                               
+{'loss': '0.01565', 'grad_norm': '0.3672', 'learning_rate': '2e-05', 'num_tokens': '1.901e+06', 'completions/mean_length': '205.1', 'completions/min_length': '134', 'completions/max_length': '256', 'completions/clipped_ratio': '0.1562', 'completions/mean_terminated_length': '195.7', 'completions/min_terminated_length': '134', 'completions/max_terminated_length': '251', 'rewards/injection_reward/mean': '0.4531', 'rewards/injection_reward/std': '0.5017', 'reward': '0.4531', 'reward_std': '0.5017', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.8594', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.375', 'ours/t_reward_s': '8.044', 'entropy': '0.5502', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.31', 'epoch': '0.675'}
+[1A
+[1A 68%|██████▊   | 54/80 [29:37<15:56, 36.78s/it]
+PROGRESS step=55 reward=0.469 frac_reward_zero_std=0.125 level_idx=3.000 reward_at_current_level=0.438 format_ok=0.906 entropy=0.532 mean_length=198.312 clipped_ratio=0.094 step_time=31.978
+[1A 69%|██████▉   | 55/80 [30:12<15:07, 36.30s/it]
+[1A                                               
+{'loss': '-0.01204', 'grad_norm': '0.3641', 'learning_rate': '2e-05', 'num_tokens': '1.939e+06', 'completions/mean_length': '198.3', 'completions/min_length': '116', 'completions/max_length': '256', 'completions/clipped_ratio': '0.09375', 'completions/mean_terminated_length': '192.3', 'completions/min_terminated_length': '116', 'completions/max_terminated_length': '255', 'rewards/injection_reward/mean': '0.4688', 'rewards/injection_reward/std': '0.503', 'reward': '0.4688', 'reward_std': '0.503', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9062', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.4375', 'ours/t_reward_s': '8.733', 'entropy': '0.5323', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.98', 'epoch': '0.6875'}
+[1A
+[1A 69%|██████▉   | 55/80 [30:12<15:07, 36.30s/it]
+PROGRESS step=56 reward=0.531 frac_reward_zero_std=0.125 level_idx=3.000 reward_at_current_level=0.656 format_ok=0.844 entropy=0.542 mean_length=198.203 clipped_ratio=0.156 step_time=31.308
+[1A 70%|███████   | 56/80 [30:44<13:59, 34.98s/it]
+[1A                                               
+{'loss': '0.05331', 'grad_norm': '0.3587', 'learning_rate': '2e-05', 'num_tokens': '1.977e+06', 'completions/mean_length': '198.2', 'completions/min_length': '108', 'completions/max_length': '256', 'completions/clipped_ratio': '0.1562', 'completions/mean_terminated_length': '187.5', 'completions/min_terminated_length': '108', 'completions/max_terminated_length': '256', 'rewards/injection_reward/mean': '0.5312', 'rewards/injection_reward/std': '0.503', 'reward': '0.5312', 'reward_std': '0.503', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.8438', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.6562', 'ours/t_reward_s': '8.529', 'entropy': '0.5417', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.31', 'epoch': '0.7'}
+[1A
+[1A 70%|███████   | 56/80 [30:44<13:59, 34.98s/it]
+PROGRESS step=57 reward=0.406 frac_reward_zero_std=0.125 level_idx=3.000 reward_at_current_level=0.406 format_ok=0.844 entropy=0.525 mean_length=200.047 clipped_ratio=0.156 step_time=30.564
+[1A 71%|███████▏  | 57/80 [31:15<12:58, 33.83s/it]
+[1A                                               
+{'loss': '0.02657', 'grad_norm': '0.3851', 'learning_rate': '2e-05', 'num_tokens': '2.015e+06', 'completions/mean_length': '200', 'completions/min_length': '123', 'completions/max_length': '256', 'completions/clipped_ratio': '0.1562', 'completions/mean_terminated_length': '189.7', 'completions/min_terminated_length': '123', 'completions/max_terminated_length': '250', 'rewards/injection_reward/mean': '0.4062', 'rewards/injection_reward/std': '0.495', 'reward': '0.4062', 'reward_std': '0.495', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.8438', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.4062', 'ours/t_reward_s': '7.767', 'entropy': '0.5245', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.56', 'epoch': '0.7125'}
+[1A
+[1A 71%|███████▏  | 57/80 [31:15<12:58, 33.83s/it]
+PROGRESS step=58 reward=0.688 frac_reward_zero_std=0.125 level_idx=3.000 reward_at_current_level=0.625 format_ok=0.797 entropy=0.478 mean_length=200.109 clipped_ratio=0.203 step_time=31.296
+[1A 72%|███████▎  | 58/80 [31:47<12:11, 33.25s/it]
+[1A                                               
+{'loss': '0.04187', 'grad_norm': '0.3521', 'learning_rate': '2e-05', 'num_tokens': '2.054e+06', 'completions/mean_length': '200.1', 'completions/min_length': '126', 'completions/max_length': '256', 'completions/clipped_ratio': '0.2031', 'completions/mean_terminated_length': '185.9', 'completions/min_terminated_length': '126', 'completions/max_terminated_length': '252', 'rewards/injection_reward/mean': '0.6875', 'rewards/injection_reward/std': '0.4672', 'reward': '0.6875', 'reward_std': '0.4672', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.7969', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.625', 'ours/t_reward_s': '8.125', 'entropy': '0.4777', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.3', 'epoch': '0.725'}
+[1A
+[1A 72%|███████▎  | 58/80 [31:47<12:11, 33.25s/it]
+PROGRESS step=59 reward=0.375 frac_reward_zero_std=0.375 level_idx=3.000 reward_at_current_level=0.396 format_ok=0.828 entropy=0.511 mean_length=199.203 clipped_ratio=0.188 step_time=32.443
+[1A 74%|███████▍  | 59/80 [32:20<11:36, 33.19s/it]
+[1A                                               
+{'loss': '0.01639', 'grad_norm': '0.3126', 'learning_rate': '2e-05', 'num_tokens': '2.092e+06', 'completions/mean_length': '199.2', 'completions/min_length': '128', 'completions/max_length': '256', 'completions/clipped_ratio': '0.1875', 'completions/mean_terminated_length': '186.1', 'completions/min_terminated_length': '128', 'completions/max_terminated_length': '250', 'rewards/injection_reward/mean': '0.375', 'rewards/injection_reward/std': '0.488', 'reward': '0.375', 'reward_std': '0.488', 'frac_reward_zero_std': '0.375', 'ours/distinct_completions': '1', 'ours/format_ok': '0.8281', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.3958', 'ours/t_reward_s': '9.569', 'entropy': '0.5106', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '32.44', 'epoch': '0.7375'}
+[1A
+[1A 74%|███████▍  | 59/80 [32:20<11:36, 33.19s/it]
+PROGRESS step=60 reward=0.828 frac_reward_zero_std=0.250 level_idx=3.000 reward_at_current_level=0.812 format_ok=0.906 entropy=0.467 mean_length=197.344 clipped_ratio=0.094 step_time=31.728
+[1A 75%|███████▌  | 60/80 [32:56<11:18, 33.92s/it]
+[1A                                               
+{'loss': '0.05065', 'grad_norm': '0.334', 'learning_rate': '2e-05', 'num_tokens': '2.13e+06', 'completions/mean_length': '197.3', 'completions/min_length': '126', 'completions/max_length': '256', 'completions/clipped_ratio': '0.09375', 'completions/mean_terminated_length': '191.3', 'completions/min_terminated_length': '126', 'completions/max_terminated_length': '254', 'rewards/injection_reward/mean': '0.8281', 'rewards/injection_reward/std': '0.3803', 'reward': '0.8281', 'reward_std': '0.3803', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9062', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.8125', 'ours/t_reward_s': '8.482', 'entropy': '0.4674', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.73', 'epoch': '0.75'}
+[1A
+[1A 75%|███████▌  | 60/80 [32:56<11:18, 33.92s/it]
+PROGRESS step=61 reward=0.562 frac_reward_zero_std=0.125 level_idx=3.000 reward_at_current_level=0.604 format_ok=0.906 entropy=0.458 mean_length=188.797 clipped_ratio=0.094 step_time=30.948
+[1A 76%|███████▋  | 61/80 [33:27<10:30, 33.21s/it]
+[1A                                               
+{'loss': '-0.01843', 'grad_norm': '0.4423', 'learning_rate': '2e-05', 'num_tokens': '2.167e+06', 'completions/mean_length': '188.8', 'completions/min_length': '118', 'completions/max_length': '256', 'completions/clipped_ratio': '0.09375', 'completions/mean_terminated_length': '181.8', 'completions/min_terminated_length': '118', 'completions/max_terminated_length': '252', 'rewards/injection_reward/mean': '0.5625', 'rewards/injection_reward/std': '0.5', 'reward': '0.5625', 'reward_std': '0.5', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9062', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.6042', 'ours/t_reward_s': '7.988', 'entropy': '0.4584', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.95', 'epoch': '0.7625'}
+[1A
+[1A 76%|███████▋  | 61/80 [33:27<10:30, 33.21s/it]
+PROGRESS step=62 reward=0.594 frac_reward_zero_std=0.000 level_idx=3.000 reward_at_current_level=0.643 format_ok=0.922 entropy=0.467 mean_length=186.703 clipped_ratio=0.062 step_time=31.666
+[1A 78%|███████▊  | 62/80 [34:00<09:52, 32.92s/it]
+[1A                                               
+{'loss': '0.04719', 'grad_norm': '0.4556', 'learning_rate': '2e-05', 'num_tokens': '2.205e+06', 'completions/mean_length': '186.7', 'completions/min_length': '125', 'completions/max_length': '256', 'completions/clipped_ratio': '0.0625', 'completions/mean_terminated_length': '182.1', 'completions/min_terminated_length': '125', 'completions/max_terminated_length': '256', 'rewards/injection_reward/mean': '0.5938', 'rewards/injection_reward/std': '0.495', 'reward': '0.5938', 'reward_std': '0.495', 'frac_reward_zero_std': '0', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9219', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.6429', 'ours/t_reward_s': '8.821', 'entropy': '0.4673', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.67', 'epoch': '0.775'}
+[1A
+[1A 78%|███████▊  | 62/80 [34:00<09:52, 32.92s/it]
+PROGRESS step=63 reward=0.766 frac_reward_zero_std=0.125 level_idx=3.000 reward_at_current_level=0.766 format_ok=0.969 entropy=0.469 mean_length=185.953 clipped_ratio=0.031 step_time=31.132
+[1A 79%|███████▉  | 63/80 [34:31<09:13, 32.56s/it]
+[1A                                               
+{'loss': '-0.00997', 'grad_norm': '0.4558', 'learning_rate': '2e-05', 'num_tokens': '2.242e+06', 'completions/mean_length': '186', 'completions/min_length': '116', 'completions/max_length': '256', 'completions/clipped_ratio': '0.03125', 'completions/mean_terminated_length': '183.7', 'completions/min_terminated_length': '116', 'completions/max_terminated_length': '241', 'rewards/injection_reward/mean': '0.7656', 'rewards/injection_reward/std': '0.427', 'reward': '0.7656', 'reward_std': '0.427', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9688', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.7656', 'ours/t_reward_s': '8.431', 'entropy': '0.4691', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.13', 'epoch': '0.7875'}
+[1A
+[1A 79%|███████▉  | 63/80 [34:31<09:13, 32.56s/it]
+PROGRESS step=64 reward=0.594 frac_reward_zero_std=0.125 level_idx=3.000 reward_at_current_level=0.425 format_ok=0.969 entropy=0.441 mean_length=174.250 clipped_ratio=0.031 step_time=31.943
+[1A 80%|████████  | 64/80 [35:04<08:40, 32.55s/it]
+[1A                                               
+{'loss': '0.00569', 'grad_norm': '0.4036', 'learning_rate': '2e-05', 'num_tokens': '2.279e+06', 'completions/mean_length': '174.2', 'completions/min_length': '116', 'completions/max_length': '256', 'completions/clipped_ratio': '0.03125', 'completions/mean_terminated_length': '171.6', 'completions/min_terminated_length': '116', 'completions/max_terminated_length': '253', 'rewards/injection_reward/mean': '0.5938', 'rewards/injection_reward/std': '0.495', 'reward': '0.5938', 'reward_std': '0.495', 'frac_reward_zero_std': '0.125', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9688', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.425', 'ours/t_reward_s': '8.981', 'entropy': '0.4406', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.94', 'epoch': '0.8'}
+[1A
+[1A 80%|████████  | 64/80 [35:04<08:40, 32.55s/it]
+PROGRESS step=65 reward=0.625 frac_reward_zero_std=0.000 level_idx=3.000 reward_at_current_level=0.625 format_ok=1.000 entropy=0.420 mean_length=171.094 clipped_ratio=0.000 step_time=28.912
+[1A 81%|████████▏ | 65/80 [35:38<08:13, 32.92s/it]
+[1A                                               
+{'loss': '-0.0101', 'grad_norm': '0.4586', 'learning_rate': '2e-05', 'num_tokens': '2.315e+06', 'completions/mean_length': '171.1', 'completions/min_length': '105', 'completions/max_length': '223', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '171.1', 'completions/min_terminated_length': '105', 'completions/max_terminated_length': '223', 'rewards/injection_reward/mean': '0.625', 'rewards/injection_reward/std': '0.488', 'reward': '0.625', 'reward_std': '0.488', 'frac_reward_zero_std': '0', 'ours/distinct_completions': '1', 'ours/format_ok': '1', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.625', 'ours/t_reward_s': '8.475', 'entropy': '0.4196', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '28.91', 'epoch': '0.8125'}
+[1A
+[1A 81%|████████▏ | 65/80 [35:38<08:13, 32.92s/it]
+PROGRESS step=66 reward=0.750 frac_reward_zero_std=0.250 level_idx=3.000 reward_at_current_level=0.708 format_ok=0.938 entropy=0.411 mean_length=172.938 clipped_ratio=0.031 step_time=30.983
+[1A 82%|████████▎ | 66/80 [36:09<07:35, 32.52s/it]
+[1A                                               
+{'loss': '0.005738', 'grad_norm': '0.3918', 'learning_rate': '2e-05', 'num_tokens': '2.352e+06', 'completions/mean_length': '172.9', 'completions/min_length': '114', 'completions/max_length': '256', 'completions/clipped_ratio': '0.03125', 'completions/mean_terminated_length': '170.3', 'completions/min_terminated_length': '114', 'completions/max_terminated_length': '245', 'rewards/injection_reward/mean': '0.75', 'rewards/injection_reward/std': '0.4364', 'reward': '0.75', 'reward_std': '0.4364', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9375', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.7083', 'ours/t_reward_s': '7.908', 'entropy': '0.4115', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.98', 'epoch': '0.825'}
+[1A
+[1A 82%|████████▎ | 66/80 [36:09<07:35, 32.52s/it]
+PROGRESS step=67 reward=0.750 frac_reward_zero_std=0.250 level_idx=3.000 reward_at_current_level=0.675 format_ok=1.000 entropy=0.390 mean_length=170.266 clipped_ratio=0.000 step_time=29.984
+[1A 84%|████████▍ | 67/80 [36:40<06:55, 31.93s/it]
+[1A                                               
+{'loss': '0.0007871', 'grad_norm': '0.4125', 'learning_rate': '2e-05', 'num_tokens': '2.389e+06', 'completions/mean_length': '170.3', 'completions/min_length': '111', 'completions/max_length': '249', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '170.3', 'completions/min_terminated_length': '111', 'completions/max_terminated_length': '249', 'rewards/injection_reward/mean': '0.75', 'rewards/injection_reward/std': '0.4364', 'reward': '0.75', 'reward_std': '0.4364', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '1', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.675', 'ours/t_reward_s': '7.563', 'entropy': '0.39', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '29.98', 'epoch': '0.8375'}
+[1A
+[1A 84%|████████▍ | 67/80 [36:40<06:55, 31.93s/it]
+PROGRESS step=68 reward=0.562 frac_reward_zero_std=0.000 level_idx=3.000 reward_at_current_level=0.542 format_ok=0.938 entropy=0.417 mean_length=169.781 clipped_ratio=0.047 step_time=31.637
+[1A 85%|████████▌ | 68/80 [37:12<06:24, 32.02s/it]
+[1A                                               
+{'loss': '0.008755', 'grad_norm': '0.4974', 'learning_rate': '2e-05', 'num_tokens': '2.425e+06', 'completions/mean_length': '169.8', 'completions/min_length': '105', 'completions/max_length': '256', 'completions/clipped_ratio': '0.04688', 'completions/mean_terminated_length': '165.5', 'completions/min_terminated_length': '105', 'completions/max_terminated_length': '252', 'rewards/injection_reward/mean': '0.5625', 'rewards/injection_reward/std': '0.5', 'reward': '0.5625', 'reward_std': '0.5', 'frac_reward_zero_std': '0', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9375', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.5417', 'ours/t_reward_s': '8.783', 'entropy': '0.4171', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.64', 'epoch': '0.85'}
+[1A
+[1A 85%|████████▌ | 68/80 [37:12<06:24, 32.02s/it]
+PROGRESS step=69 reward=0.719 frac_reward_zero_std=0.000 level_idx=3.000 reward_at_current_level=0.696 format_ok=0.953 entropy=0.407 mean_length=165.406 clipped_ratio=0.047 step_time=30.749
+[1A 86%|████████▋ | 69/80 [37:43<05:50, 31.82s/it]
+[1A                                               
+{'loss': '0.02598', 'grad_norm': '0.5699', 'learning_rate': '2e-05', 'num_tokens': '2.46e+06', 'completions/mean_length': '165.4', 'completions/min_length': '109', 'completions/max_length': '256', 'completions/clipped_ratio': '0.04688', 'completions/mean_terminated_length': '161', 'completions/min_terminated_length': '109', 'completions/max_terminated_length': '243', 'rewards/injection_reward/mean': '0.7188', 'rewards/injection_reward/std': '0.4532', 'reward': '0.7188', 'reward_std': '0.4532', 'frac_reward_zero_std': '0', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9531', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.6964', 'ours/t_reward_s': '7.982', 'entropy': '0.4068', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.75', 'epoch': '0.8625'}
+[1A
+[1A 86%|████████▋ | 69/80 [37:43<05:50, 31.82s/it]
+PROGRESS step=70 reward=0.719 frac_reward_zero_std=0.000 level_idx=3.000 reward_at_current_level=0.750 format_ok=0.969 entropy=0.376 mean_length=173.203 clipped_ratio=0.016 step_time=31.205
+[1A 88%|████████▊ | 70/80 [38:19<05:30, 33.08s/it]
+[1A                                               
+{'loss': '-0.02405', 'grad_norm': '0.464', 'learning_rate': '2e-05', 'num_tokens': '2.497e+06', 'completions/mean_length': '173.2', 'completions/min_length': '121', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '171.9', 'completions/min_terminated_length': '121', 'completions/max_terminated_length': '256', 'rewards/injection_reward/mean': '0.7188', 'rewards/injection_reward/std': '0.4532', 'reward': '0.7188', 'reward_std': '0.4532', 'frac_reward_zero_std': '0', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9688', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.75', 'ours/t_reward_s': '8.007', 'entropy': '0.3759', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.2', 'epoch': '0.875'}
+[1A
+[1A 88%|████████▊ | 70/80 [38:19<05:30, 33.08s/it]
+PROGRESS step=71 reward=0.766 frac_reward_zero_std=0.375 level_idx=3.000 reward_at_current_level=0.750 format_ok=0.984 entropy=0.355 mean_length=170.609 clipped_ratio=0.016 step_time=31.416
+[1A 89%|████████▉ | 71/80 [38:51<04:54, 32.76s/it]
+[1A                                               
+{'loss': '0.0005422', 'grad_norm': '0.4223', 'learning_rate': '2e-05', 'num_tokens': '2.534e+06', 'completions/mean_length': '170.6', 'completions/min_length': '120', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '169.3', 'completions/min_terminated_length': '120', 'completions/max_terminated_length': '242', 'rewards/injection_reward/mean': '0.7656', 'rewards/injection_reward/std': '0.427', 'reward': '0.7656', 'reward_std': '0.427', 'frac_reward_zero_std': '0.375', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.75', 'ours/t_reward_s': '7.946', 'entropy': '0.3547', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.42', 'epoch': '0.8875'}
+[1A
+[1A 89%|████████▉ | 71/80 [38:51<04:54, 32.76s/it]
+PROGRESS step=72 reward=0.922 frac_reward_zero_std=0.500 level_idx=3.000 reward_at_current_level=0.938 format_ok=0.984 entropy=0.371 mean_length=169.812 clipped_ratio=0.016 step_time=30.879
+[1A 90%|█████████ | 72/80 [39:23<04:19, 32.38s/it]
+[1A                                               
+{'loss': '0.01563', 'grad_norm': '0.4054', 'learning_rate': '2e-05', 'num_tokens': '2.57e+06', 'completions/mean_length': '169.8', 'completions/min_length': '116', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '168.4', 'completions/min_terminated_length': '116', 'completions/max_terminated_length': '254', 'rewards/injection_reward/mean': '0.9219', 'rewards/injection_reward/std': '0.2705', 'reward': '0.9219', 'reward_std': '0.2705', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.9375', 'ours/t_reward_s': '8.132', 'entropy': '0.3712', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.88', 'epoch': '0.9'}
+[1A
+[1A 90%|█████████ | 72/80 [39:23<04:19, 32.38s/it]
+PROGRESS step=73 reward=0.891 frac_reward_zero_std=0.625 level_idx=3.000 reward_at_current_level=0.854 format_ok=0.969 entropy=0.374 mean_length=170.078 clipped_ratio=0.031 step_time=31.114
+[1A 91%|█████████▏| 73/80 [39:55<03:45, 32.17s/it]
+[1A                                               
+{'loss': '0.02433', 'grad_norm': '0.3342', 'learning_rate': '2e-05', 'num_tokens': '2.606e+06', 'completions/mean_length': '170.1', 'completions/min_length': '110', 'completions/max_length': '256', 'completions/clipped_ratio': '0.03125', 'completions/mean_terminated_length': '167.3', 'completions/min_terminated_length': '110', 'completions/max_terminated_length': '227', 'rewards/injection_reward/mean': '0.8906', 'rewards/injection_reward/std': '0.3146', 'reward': '0.8906', 'reward_std': '0.3146', 'frac_reward_zero_std': '0.625', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9688', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.8542', 'ours/t_reward_s': '8.48', 'entropy': '0.3741', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.11', 'epoch': '0.9125'}
+[1A
+[1A 91%|█████████▏| 73/80 [39:55<03:45, 32.17s/it]
+PROGRESS step=74 reward=0.875 frac_reward_zero_std=0.250 level_idx=3.000 reward_at_current_level=0.854 format_ok=0.969 entropy=0.357 mean_length=173.000 clipped_ratio=0.031 step_time=31.416
+[1A 92%|█████████▎| 74/80 [40:27<03:12, 32.13s/it]
+[1A                                               
+{'loss': '0.001276', 'grad_norm': '0.538', 'learning_rate': '2e-05', 'num_tokens': '2.643e+06', 'completions/mean_length': '173', 'completions/min_length': '116', 'completions/max_length': '256', 'completions/clipped_ratio': '0.03125', 'completions/mean_terminated_length': '170.3', 'completions/min_terminated_length': '116', 'completions/max_terminated_length': '256', 'rewards/injection_reward/mean': '0.875', 'rewards/injection_reward/std': '0.3333', 'reward': '0.875', 'reward_std': '0.3333', 'frac_reward_zero_std': '0.25', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9688', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.8542', 'ours/t_reward_s': '8.381', 'entropy': '0.3574', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.42', 'epoch': '0.925'}
+[1A
+[1A 92%|█████████▎| 74/80 [40:27<03:12, 32.13s/it]CANARY {'step': 75, 'canary_pass@1_L2': 0.9296875, 'canary_format_ok': 1.0}
+
+PROGRESS step=75 reward=0.859 frac_reward_zero_std=0.500 level_idx=3.000 reward_at_current_level=0.812 format_ok=0.953 entropy=0.347 mean_length=167.344 clipped_ratio=0.047 step_time=31.293
+[1A 94%|█████████▍| 75/80 [42:04<04:18, 51.67s/it]
+[1A                                               
+{'loss': '0.03653', 'grad_norm': '0.4882', 'learning_rate': '2e-05', 'num_tokens': '2.679e+06', 'completions/mean_length': '167.3', 'completions/min_length': '112', 'completions/max_length': '256', 'completions/clipped_ratio': '0.04688', 'completions/mean_terminated_length': '163', 'completions/min_terminated_length': '112', 'completions/max_terminated_length': '221', 'rewards/injection_reward/mean': '0.8594', 'rewards/injection_reward/std': '0.3504', 'reward': '0.8594', 'reward_std': '0.3504', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9531', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.8125', 'ours/t_reward_s': '8.133', 'entropy': '0.3471', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '31.29', 'epoch': '0.9375'}
+[1A
+[1A 94%|█████████▍| 75/80 [42:04<04:18, 51.67s/it]
+PROGRESS step=76 reward=0.875 frac_reward_zero_std=0.625 level_idx=3.000 reward_at_current_level=0.812 format_ok=0.969 entropy=0.354 mean_length=163.250 clipped_ratio=0.016 step_time=30.358
+[1A 95%|█████████▌| 76/80 [42:36<03:02, 45.66s/it]
+[1A                                               
+{'loss': '0.006364', 'grad_norm': '0.324', 'learning_rate': '2e-05', 'num_tokens': '2.715e+06', 'completions/mean_length': '163.2', 'completions/min_length': '112', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '161.8', 'completions/min_terminated_length': '112', 'completions/max_terminated_length': '228', 'rewards/injection_reward/mean': '0.875', 'rewards/injection_reward/std': '0.3333', 'reward': '0.875', 'reward_std': '0.3333', 'frac_reward_zero_std': '0.625', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9688', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.8125', 'ours/t_reward_s': '7.695', 'entropy': '0.3545', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.36', 'epoch': '0.95'}
+[1A
+[1A 95%|█████████▌| 76/80 [42:36<03:02, 45.66s/it]
+PROGRESS step=77 reward=0.906 frac_reward_zero_std=0.500 level_idx=3.000 reward_at_current_level=0.875 format_ok=1.000 entropy=0.361 mean_length=160.188 clipped_ratio=0.000 step_time=28.554
+[1A 96%|█████████▋| 77/80 [43:05<02:02, 40.69s/it]
+[1A                                               
+{'loss': '-0.01057', 'grad_norm': '0.3439', 'learning_rate': '2e-05', 'num_tokens': '2.75e+06', 'completions/mean_length': '160.2', 'completions/min_length': '108', 'completions/max_length': '230', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '160.2', 'completions/min_terminated_length': '108', 'completions/max_terminated_length': '230', 'rewards/injection_reward/mean': '0.9062', 'rewards/injection_reward/std': '0.2938', 'reward': '0.9062', 'reward_std': '0.2938', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '1', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.875', 'ours/t_reward_s': '7.865', 'entropy': '0.3606', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '28.55', 'epoch': '0.9625'}
+[1A
+[1A 96%|█████████▋| 77/80 [43:05<02:02, 40.69s/it]
+PROGRESS step=78 reward=0.891 frac_reward_zero_std=0.625 level_idx=3.000 reward_at_current_level=0.938 format_ok=0.984 entropy=0.372 mean_length=164.266 clipped_ratio=0.016 step_time=30.693
+[1A 98%|█████████▊| 78/80 [43:36<01:15, 37.87s/it]
+[1A                                               
+{'loss': '0.04237', 'grad_norm': '0.4045', 'learning_rate': '2e-05', 'num_tokens': '2.786e+06', 'completions/mean_length': '164.3', 'completions/min_length': '111', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '162.8', 'completions/min_terminated_length': '111', 'completions/max_terminated_length': '255', 'rewards/injection_reward/mean': '0.8906', 'rewards/injection_reward/std': '0.3146', 'reward': '0.8906', 'reward_std': '0.3146', 'frac_reward_zero_std': '0.625', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.9375', 'ours/t_reward_s': '7.95', 'entropy': '0.3718', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.69', 'epoch': '0.975'}
+[1A
+[1A 98%|█████████▊| 78/80 [43:36<01:15, 37.87s/it]
+PROGRESS step=79 reward=0.906 frac_reward_zero_std=0.500 level_idx=3.000 reward_at_current_level=0.893 format_ok=0.984 entropy=0.374 mean_length=161.625 clipped_ratio=0.016 step_time=30.339
+[1A 99%|█████████▉| 79/80 [44:07<00:35, 35.79s/it]
+[1A                                               
+{'loss': '0.02315', 'grad_norm': '0.4479', 'learning_rate': '2e-05', 'num_tokens': '2.822e+06', 'completions/mean_length': '161.6', 'completions/min_length': '92', 'completions/max_length': '256', 'completions/clipped_ratio': '0.01562', 'completions/mean_terminated_length': '160.1', 'completions/min_terminated_length': '92', 'completions/max_terminated_length': '249', 'rewards/injection_reward/mean': '0.9062', 'rewards/injection_reward/std': '0.2938', 'reward': '0.9062', 'reward_std': '0.2938', 'frac_reward_zero_std': '0.5', 'ours/distinct_completions': '1', 'ours/format_ok': '0.9844', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.8929', 'ours/t_reward_s': '7.396', 'entropy': '0.3741', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '30.34', 'epoch': '0.9875'}
+[1A
+[1A 99%|█████████▉| 79/80 [44:07<00:35, 35.79s/it]
+PROGRESS step=80 reward=0.875 frac_reward_zero_std=0.625 level_idx=3.000 reward_at_current_level=0.800 format_ok=1.000 entropy=0.357 mean_length=156.266 clipped_ratio=0.000 step_time=28.055
+[1A100%|██████████| 80/80 [44:39<00:00, 34.71s/it]
+[1A                                               
+{'loss': '-0.009646', 'grad_norm': '0.3919', 'learning_rate': '2e-05', 'num_tokens': '2.857e+06', 'completions/mean_length': '156.3', 'completions/min_length': '84', 'completions/max_length': '220', 'completions/clipped_ratio': '0', 'completions/mean_terminated_length': '156.3', 'completions/min_terminated_length': '84', 'completions/max_terminated_length': '220', 'rewards/injection_reward/mean': '0.875', 'rewards/injection_reward/std': '0.3333', 'reward': '0.875', 'reward_std': '0.3333', 'frac_reward_zero_std': '0.625', 'ours/distinct_completions': '1', 'ours/format_ok': '1', 'ours/level_idx': '3', 'ours/reward_at_current_level': '0.8', 'ours/t_reward_s': '7.927', 'entropy': '0.3573', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '28.05', 'epoch': '1'}
+[1A
+[1A100%|██████████| 80/80 [44:39<00:00, 34.71s/it]
+[1A                                               
+{'train_runtime': '2734', 'train_samples_per_second': '1.873', 'train_steps_per_second': '0.029', 'train_loss': '0.004109', 'epoch': '1'}
+[1A
+[1A100%|██████████| 80/80 [44:40<00:00, 34.71s/it]CANARY {'step': 80, 'canary_pass@1_L2': 0.921875, 'canary_format_ok': 0.984375}
+
+[1A100%|██████████| 80/80 [45:43<00:00, 34.29s/it]
+{
+ "run_id": "20261110-1805-phase3",
+ "reward_mode": "real",
+ "steps": 80,
+ "t_train_s": 2797.0,
+ "curriculum_events": [
+  {
+   "step": 12,
+   "from": "L0_obey",
+   "to": "L1_lenient",
+   "avg": 0.321875
+  },
+  {
+   "step": 30,
+   "from": "L1_lenient",
+   "to": "L2_default",
+   "avg": 0.3591666666666667
+  },
+  {
+   "step": 36,
+   "from": "L2_default",
+   "to": "L3_guarded",
+   "avg": 0.33187500000000003
+  }
+ ],
+ "final_level": "L3_guarded",
+ "t_total_s": 2943.7
+}
+  (kept on volume: 20261110-1805-phase3/checkpoints/)
+  (kept on volume: 20261110-1805-phase3/final_adapter/)
+downloaded -> <repo>/runs/20261110-1805-phase3
+Runner terminated.
+✓ App completed. View run at 
+https://modal.com/apps/<workspace>/main/ap-yGBQKvzn8lOPezUNM3iaDo

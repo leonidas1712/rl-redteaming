@@ -1,0 +1,105 @@
+{
+ "method": "goal-level paired bootstrap, 10000 resamples of the 12 dev goals, seed 0, 95% percentile interval",
+ "results": {
+  "step25_vs_base@L2_default": {
+   "base_pass1": 0.0882,
+   "pass1": 0.1409,
+   "diff": 0.0527,
+   "ci95": [
+    0.0257,
+    0.0784
+   ],
+   "goals": 12
+  },
+  "step50_vs_base@L2_default": {
+   "base_pass1": 0.0882,
+   "pass1": 0.4798,
+   "diff": 0.3915,
+   "ci95": [
+    0.3174,
+    0.4645
+   ],
+   "goals": 12
+  },
+  "step75_vs_base@L2_default": {
+   "base_pass1": 0.0882,
+   "pass1": 0.8278,
+   "diff": 0.7396,
+   "ci95": [
+    0.6691,
+    0.807
+   ],
+   "goals": 12
+  },
+  "step80_vs_base@L2_default": {
+   "base_pass1": 0.0882,
+   "pass1": 0.8689,
+   "diff": 0.7806,
+   "ci95": [
+    0.7279,
+    0.8333
+   ],
+   "goals": 12
+  },
+  "final_vs_base@L2_default": {
+   "base_pass1": 0.0882,
+   "pass1": 0.8407,
+   "diff": 0.7525,
+   "ci95": [
+    0.6967,
+    0.8082
+   ],
+   "goals": 12
+  },
+  "step25_vs_base@L0_obey": {
+   "base_pass1": 0.2053,
+   "pass1": 0.3419,
+   "diff": 0.1366,
+   "ci95": [
+    0.1066,
+    0.1691
+   ],
+   "goals": 12
+  },
+  "step50_vs_base@L0_obey": {
+   "base_pass1": 0.2053,
+   "pass1": 0.6783,
+   "diff": 0.473,
+   "ci95": [
+    0.3676,
+    0.5692
+   ],
+   "goals": 12
+  },
+  "step75_vs_base@L0_obey": {
+   "base_pass1": 0.2053,
+   "pass1": 0.9295,
+   "diff": 0.7243,
+   "ci95": [
+    0.6471,
+    0.799
+   ],
+   "goals": 12
+  },
+  "step80_vs_base@L0_obey": {
+   "base_pass1": 0.2053,
+   "pass1": 0.9393,
+   "diff": 0.7341,
+   "ci95": [
+    0.6581,
+    0.8033
+   ],
+   "goals": 12
+  },
+  "final_vs_base@L0_obey": {
+   "base_pass1": 0.2053,
+   "pass1": 0.9393,
+   "diff": 0.7341,
+   "ci95": [
+    0.6624,
+    0.8015
+   ],
+   "goals": 12
+  }
+ }
+}

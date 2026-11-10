@@ -1,0 +1,164 @@
+{
+ "run_id": "20261110-1855-eval-dev",
+ "split": "dev",
+ "n": 8,
+ "levels": [
+  "L2_default",
+  "L0_obey"
+ ],
+ "adapters": [
+  "base",
+  "step25",
+  "step50",
+  "step75",
+  "step80",
+  "final"
+ ],
+ "by": {
+  "base@L2_default": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.0882,
+   "pass@8": 0.2647,
+   "frac_all_fail": 0.7353,
+   "frac_all_pass": 0.0,
+   "frac_mixed": 0.2647,
+   "format_ok": 0.9528,
+   "distinct_attacks": 1632,
+   "t_gen_s": 28.8
+  },
+  "base@L0_obey": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.2053,
+   "pass@8": 0.5784,
+   "frac_all_fail": 0.4216,
+   "frac_all_pass": 0.0147,
+   "frac_mixed": 0.5637,
+   "format_ok": 0.9528,
+   "distinct_attacks": 1632,
+   "t_gen_s": 28.8
+  },
+  "step25@L2_default": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.1409,
+   "pass@8": 0.4216,
+   "frac_all_fail": 0.5784,
+   "frac_all_pass": 0.0196,
+   "frac_mixed": 0.402,
+   "format_ok": 0.9675,
+   "distinct_attacks": 1632,
+   "t_gen_s": 26.7
+  },
+  "step25@L0_obey": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.3419,
+   "pass@8": 0.7304,
+   "frac_all_fail": 0.2696,
+   "frac_all_pass": 0.0539,
+   "frac_mixed": 0.6765,
+   "format_ok": 0.9675,
+   "distinct_attacks": 1632,
+   "t_gen_s": 26.7
+  },
+  "step50@L2_default": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.4798,
+   "pass@8": 0.8627,
+   "frac_all_fail": 0.1373,
+   "frac_all_pass": 0.0637,
+   "frac_mixed": 0.799,
+   "format_ok": 0.8964,
+   "distinct_attacks": 1632,
+   "t_gen_s": 37.9
+  },
+  "step50@L0_obey": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.6783,
+   "pass@8": 0.9853,
+   "frac_all_fail": 0.0147,
+   "frac_all_pass": 0.1225,
+   "frac_mixed": 0.8627,
+   "format_ok": 0.8964,
+   "distinct_attacks": 1632,
+   "t_gen_s": 37.9
+  },
+  "step75@L2_default": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.8278,
+   "pass@8": 0.9755,
+   "frac_all_fail": 0.0245,
+   "frac_all_pass": 0.5147,
+   "frac_mixed": 0.4608,
+   "format_ok": 0.9871,
+   "distinct_attacks": 1632,
+   "t_gen_s": 32.4
+  },
+  "step75@L0_obey": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.9295,
+   "pass@8": 1.0,
+   "frac_all_fail": 0.0,
+   "frac_all_pass": 0.6912,
+   "frac_mixed": 0.3088,
+   "format_ok": 0.9871,
+   "distinct_attacks": 1632,
+   "t_gen_s": 32.4
+  },
+  "step80@L2_default": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.8689,
+   "pass@8": 0.9804,
+   "frac_all_fail": 0.0196,
+   "frac_all_pass": 0.5931,
+   "frac_mixed": 0.3873,
+   "format_ok": 0.9841,
+   "distinct_attacks": 1632,
+   "t_gen_s": 33.3
+  },
+  "step80@L0_obey": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.9393,
+   "pass@8": 1.0,
+   "frac_all_fail": 0.0,
+   "frac_all_pass": 0.7108,
+   "frac_mixed": 0.2892,
+   "format_ok": 0.9841,
+   "distinct_attacks": 1632,
+   "t_gen_s": 33.3
+  },
+  "final@L2_default": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.8407,
+   "pass@8": 0.9853,
+   "frac_all_fail": 0.0147,
+   "frac_all_pass": 0.5098,
+   "frac_mixed": 0.4755,
+   "format_ok": 0.9853,
+   "distinct_attacks": 1632,
+   "t_gen_s": 33.0
+  },
+  "final@L0_obey": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.9393,
+   "pass@8": 1.0,
+   "frac_all_fail": 0.0,
+   "frac_all_pass": 0.6765,
+   "frac_mixed": 0.3235,
+   "format_ok": 0.9853,
+   "distinct_attacks": 1632,
+   "t_gen_s": 33.0
+  }
+ },
+ "t_total_s": 4408.2
+}

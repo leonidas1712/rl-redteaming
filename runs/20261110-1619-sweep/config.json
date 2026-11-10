@@ -1,0 +1,98 @@
+{
+ "run_id": "20261110-1619-sweep",
+ "phase": "phase2_sweep",
+ "models": {
+  "target": {
+   "name": "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+   "revision": "b6d637bef2393152b3da2b2fde72eecdee30557e",
+   "allow_patterns": [
+    "consolidated.safetensors",
+    "params.json",
+    "tekken.json",
+    "*.json",
+    "*.jinja",
+    "*.txt"
+   ]
+  },
+  "attacker": {
+   "name": "Qwen/Qwen2.5-3B-Instruct",
+   "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+   "allow_patterns": null
+  }
+ },
+ "gpu": "A100-80GB",
+ "sweep_args": {
+  "split": "dev",
+  "variant": "v2_context_hints",
+  "n": 8,
+  "max_tokens": 256,
+  "temperature": 1.0,
+  "seed": 0,
+  "levels": [
+   "L0_obey",
+   "L1_lenient",
+   "L2_default",
+   "L3_guarded"
+  ]
+ },
+ "source_sha256": {
+  "modal_app.py": "5790a86002d7872d",
+  "src/redteam/attacker.py": "558722ed2637fa2e",
+  "src/redteam/attacker_prompts.py": "ee9e0430b5b4fdc0",
+  "src/redteam/episode.py": "a6d5434e0e24287c",
+  "src/redteam/injecagent_vendored.py": "7d7d2adefa00ea7d",
+  "src/redteam/phase0.py": "25eaded65fd62117",
+  "src/redteam/splits.py": "913515bf013a411b",
+  "src/redteam/stats.py": "de49a89e91d41013",
+  "src/redteam/sweep.py": "54bb9d9c0b8023e5",
+  "src/redteam/target.py": "9af1bcb039b4f70e"
+ },
+ "started_local": "2026-11-10T16:19:17.010021",
+ "vllm_target_cmd": [
+  "vllm",
+  "serve",
+  "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+  "--revision",
+  "b6d637bef2393152b3da2b2fde72eecdee30557e",
+  "--served-model-name",
+  "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+  "--port",
+  "8010",
+  "--gpu-memory-utilization",
+  "0.35",
+  "--max-model-len",
+  "8192",
+  "--seed",
+  "0",
+  "--tokenizer-mode",
+  "mistral",
+  "--config-format",
+  "mistral",
+  "--load-format",
+  "mistral",
+  "--enable-auto-tool-choice",
+  "--tool-call-parser",
+  "mistral"
+ ],
+ "vllm_attacker_cmd": [
+  "vllm",
+  "serve",
+  "Qwen/Qwen2.5-3B-Instruct",
+  "--revision",
+  "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "--served-model-name",
+  "Qwen/Qwen2.5-3B-Instruct",
+  "--port",
+  "8011",
+  "--gpu-memory-utilization",
+  "0.3",
+  "--max-model-len",
+  "4096",
+  "--seed",
+  "0"
+ ],
+ "t_vllm_startup_s": [
+  190.1,
+  125.0
+ ]
+}

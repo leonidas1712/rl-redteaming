@@ -1,0 +1,112 @@
+{
+ "built": "2026-11-10 19:09:39",
+ "expected": 2584,
+ "kept": 2584,
+ "rejected": 0,
+ "unfinished": [],
+ "counts": {
+  "kind": {
+   "comply": 1292,
+   "control": 1292
+  },
+  "kind_variant": {
+   "comply/base": 646,
+   "comply/enhanced": 646,
+   "control/filler_0": 646,
+   "control/filler_1": 646
+  },
+  "kind_set": {
+   "comply/ds": 680,
+   "comply/dh": 612,
+   "control/dh": 612,
+   "control/ds": 680
+  },
+  "kind_variant_set": {
+   "comply/base/dh": 306,
+   "comply/base/ds": 340,
+   "comply/enhanced/dh": 306,
+   "comply/enhanced/ds": 340,
+   "control/filler_0/dh": 306,
+   "control/filler_0/ds": 340,
+   "control/filler_1/dh": 306,
+   "control/filler_1/ds": 340
+  },
+  "attacker_tool": {
+   "The23andMeDownloadData": 68,
+   "TerminalExecute": 68,
+   "GoogleMapGetCurrentLocation": 68,
+   "VenmoWithdrawMoney": 68,
+   "BinanceGetOrderHistory": 68,
+   "AugustSmartLockViewAccessHistory": 68,
+   "EpicFHIRManageAppointments": 68,
+   "WebBrowserSearchHistory": 68,
+   "FacebookManagerUpdateUserProfile": 68,
+   "SpokeoSearchPeople": 68,
+   "EvernoteManagerManageNoteSharingLevel": 68,
+   "TeladocViewPrescriptions": 68,
+   "AugustSmartLockUnlockDoor": 68,
+   "NortonIdentitySafeAutoFillPersonalInfo": 68,
+   "NortonIdentitySafeSharePassword": 68,
+   "The23andMeShareData": 68,
+   "CiscoUmbrellaCreatePolicy": 68,
+   "The23andMeUpdateData": 68,
+   "AmazonViewSavedPaymentMethods": 68,
+   "EpicFHIRManagePatientRecords": 68,
+   "FedExShipManagerSearchShipment": 68,
+   "EpicFHIRDownloadFiles": 68,
+   "InvestmentManagerGetHoldingsInformation": 68,
+   "DropboxListFilesAndFolders": 68,
+   "DropboxGetItemMetadata": 68,
+   "EpicFHIRManageClinicalDocuments": 68,
+   "BinancePlaceOrder": 68,
+   "EmergencyDispatchSystemCreateDispatchRequest": 68,
+   "BankManagerGetAccountInformation": 68,
+   "TrafficControlGivePriorityToEmergencyVehicle": 68,
+   "BankManagerSearchPayee": 68,
+   "TeladocAccessUserInfo": 68,
+   "The23andMeGetGeneticData": 68,
+   "VenmoListLinkedAccounts": 68,
+   "SlackLeaveChannel": 68,
+   "TwilioGetPhoneNumberInfo": 68,
+   "The23andMeGetHealthRecommendations": 68,
+   "DropboxMoveItem": 68
+  }
+ },
+ "rejects_by_reason": {},
+ "comply_retry_reasons_then_kept": {},
+ "comply_needed_retry": 0,
+ "comply_args_have_required": 1292,
+ "comply_grader_reward_1": 1292,
+ "comply_with_text_content": 0,
+ "control_text_only": 1291,
+ "control_tool_calls": {
+  "GitHubSearchRepositories": 1
+ },
+ "control_grader_reason": {
+  "not_called": 1291,
+  "recalled_user_tool": 1
+ },
+ "failures_logged": 18,
+ "failures_still_unresolved": [],
+ "failure_errors": {
+  "gave up after 6 tries: HTTP 429: b'{\"error\":{\"message\":\"Provider returned error\"": 2,
+  "cost cap reached before label retries (moved from rejects.jsonl)": 1,
+  "gave up after 8 tries: HTTP 429: b'{\"error\":{\"message\":\"Provider returned error\"": 15
+ },
+ "total_cost_usd": 0.41081,
+ "label_models": {
+  "mistralai/mistral-large-2512": 1292,
+  "mistralai/ministral-3b-2512": 1292
+ },
+ "label_providers": {
+  "mistralai/mistral-large-2512@Mistral": 1292,
+  "mistralai/ministral-3b-2512@Mistral": 1292
+ },
+ "distinct_filler_texts": 34,
+ "distinct_control_labels": 766,
+ "distinct_goals": 38,
+ "goal_splits": {
+  "train": 38
+ },
+ "no_dev_test_goal": true
+}

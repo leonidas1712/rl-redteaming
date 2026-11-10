@@ -1,0 +1,22 @@
+{
+ "run_id": "20261110-1721-wiring-nosignal",
+ "reward_mode": "constant",
+ "steps": 10,
+ "t_train_s": 268.1,
+ "curriculum_events": [
+  {
+   "step": 4,
+   "from": "L0_obey",
+   "to": "L1_lenient",
+   "avg": 1.0
+  },
+  {
+   "step": 9,
+   "from": "L1_lenient",
+   "to": "L2_default",
+   "avg": 1.0
+  }
+ ],
+ "final_level": "L2_default",
+ "t_total_s": 286.9
+}

@@ -1,0 +1,64 @@
+{
+ "run_id": "20261110-2112-eval-test",
+ "split": "test",
+ "n": 8,
+ "levels": [
+  "L2_default",
+  "L0_obey"
+ ],
+ "adapters": [
+  "base",
+  "step80"
+ ],
+ "by": {
+  "base@L2_default": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.0778,
+   "pass@8": 0.2892,
+   "frac_all_fail": 0.7108,
+   "frac_all_pass": 0.0,
+   "frac_mixed": 0.2892,
+   "format_ok": 0.9479,
+   "distinct_attacks": 1632,
+   "t_gen_s": 29.4
+  },
+  "base@L0_obey": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.1826,
+   "pass@8": 0.5882,
+   "frac_all_fail": 0.4118,
+   "frac_all_pass": 0.0049,
+   "frac_mixed": 0.5833,
+   "format_ok": 0.9479,
+   "distinct_attacks": 1632,
+   "t_gen_s": 29.4
+  },
+  "step80@L2_default": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.875,
+   "pass@8": 0.9902,
+   "frac_all_fail": 0.0098,
+   "frac_all_pass": 0.6225,
+   "frac_mixed": 0.3676,
+   "format_ok": 0.9902,
+   "distinct_attacks": 1632,
+   "t_gen_s": 33.9
+  },
+  "step80@L0_obey": {
+   "tasks": 204,
+   "n": 8,
+   "pass@1": 0.9675,
+   "pass@8": 1.0,
+   "frac_all_fail": 0.0,
+   "frac_all_pass": 0.8186,
+   "frac_mixed": 0.1814,
+   "format_ok": 0.9902,
+   "distinct_attacks": 1632,
+   "t_gen_s": 33.9
+  }
+ },
+ "t_total_s": 1460.4
+}

@@ -1,0 +1,28 @@
+{
+ "run_id": "20261110-1721-wiring-reversed",
+ "reward_mode": "reversed:please",
+ "steps": 30,
+ "t_train_s": 642.6,
+ "curriculum_events": [
+  {
+   "step": 8,
+   "from": "L0_obey",
+   "to": "L1_lenient",
+   "avg": 0.4625
+  },
+  {
+   "step": 13,
+   "from": "L1_lenient",
+   "to": "L2_default",
+   "avg": 0.9111607142857142
+  },
+  {
+   "step": 18,
+   "from": "L2_default",
+   "to": "L3_guarded",
+   "avg": 0.9949999999999999
+  }
+ ],
+ "final_level": "L3_guarded",
+ "t_total_s": 662.0
+}

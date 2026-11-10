@@ -1,0 +1,72 @@
+{
+ "run_id": "20261110-1721-wiring-onetask",
+ "phase": "wiring_onetask",
+ "models": {
+  "target": {
+   "name": "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+   "revision": "b6d637bef2393152b3da2b2fde72eecdee30557e",
+   "allow_patterns": [
+    "consolidated.safetensors",
+    "params.json",
+    "tekken.json",
+    "*.json",
+    "*.jinja",
+    "*.txt"
+   ]
+  },
+  "attacker": {
+   "name": "Qwen/Qwen2.5-3B-Instruct",
+   "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+   "allow_patterns": null
+  }
+ },
+ "gpu": "A100-80GB",
+ "train_args": {
+  "reward": "real",
+  "max_steps": 30,
+  "save_steps": 1000,
+  "fixed_level": "L0_obey",
+  "only_task": "dh:The23andMeUpdateData|TwitterManagerGetUserProfile"
+ },
+ "source_sha256": {
+  "modal_app.py": "f5309b1fc70bf0df",
+  "src/redteam/attacker.py": "558722ed2637fa2e",
+  "src/redteam/attacker_prompts.py": "ee9e0430b5b4fdc0",
+  "src/redteam/episode.py": "897429ffab2286b1",
+  "src/redteam/injecagent_vendored.py": "7d7d2adefa00ea7d",
+  "src/redteam/phase0.py": "25eaded65fd62117",
+  "src/redteam/splits.py": "913515bf013a411b",
+  "src/redteam/stats.py": "de49a89e91d41013",
+  "src/redteam/sweep.py": "7094ebe0d2552cb3",
+  "src/redteam/target.py": "9af1bcb039b4f70e",
+  "src/redteam/train.py": "0b2f4f511e952dc2"
+ },
+ "started_local": "2026-11-10T17:21:31.992823",
+ "vllm_target_cmd": [
+  "vllm",
+  "serve",
+  "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+  "--revision",
+  "b6d637bef2393152b3da2b2fde72eecdee30557e",
+  "--served-model-name",
+  "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+  "--port",
+  "8010",
+  "--gpu-memory-utilization",
+  "0.3",
+  "--max-model-len",
+  "8192",
+  "--seed",
+  "0",
+  "--tokenizer-mode",
+  "mistral",
+  "--config-format",
+  "mistral",
+  "--load-format",
+  "mistral",
+  "--enable-auto-tool-choice",
+  "--tool-call-parser",
+  "mistral"
+ ],
+ "t_vllm_startup_s": 170.1
+}

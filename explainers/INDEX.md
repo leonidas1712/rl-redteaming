@@ -1,0 +1,3 @@
+# Explainers
+
+- [overview.html](overview.html): the single project overview (Now, Q&A, idea, one episode, GRPO, a run, environment, results, decisions, weak spots, log, repo). Rebuild: `python -I explainers/build_overview.py`. Folded in from the earlier setup-and-one-episode.html: what the attacker and target each see and write, walked through one real episode (ep0383, Qwen2.5-3B fools Gemma-3-4B); why invalid target replies matter; why the target runs on the training GPU (OpenRouter flipped 3/30 rewards at temperature 0); what "the split leaks goals" means. Episodes open in [../viewer/precheck/index.html](../viewer/precheck/index.html).

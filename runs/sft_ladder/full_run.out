@@ -1,0 +1,168 @@
+train tasks 646, goals 38; full size: comply 1292 + control 1292 = 2584
+2026-11-10 18:15:56 start: 2584 jobs, 66 already done (66 kept, 0 rejected), 2518 to do; spent so far $0.0126, cap $1.5000, concurrency 5
+2026-11-10 18:16:11 progress: +50 kept, +0 rejected, +0 failed this run; total kept 116/2584; spent $0.0211; 3.33 ex/s
+2026-11-10 18:17:13 progress: +100 kept, +0 rejected, +0 failed this run; total kept 166/2584; spent $0.0286; 1.30 ex/s
+2026-11-10 18:18:28 progress: +150 kept, +0 rejected, +0 failed this run; total kept 216/2584; spent $0.0367; 0.99 ex/s
+2026-11-10 18:19:08 progress: +200 kept, +0 rejected, +0 failed this run; total kept 266/2584; spent $0.0450; 1.04 ex/s
+2026-11-10 18:19:20 progress: +250 kept, +0 rejected, +0 failed this run; total kept 316/2584; spent $0.0532; 1.23 ex/s
+2026-11-10 18:20:12 progress: +300 kept, +0 rejected, +0 failed this run; total kept 366/2584; spent $0.0609; 1.17 ex/s
+2026-11-10 18:21:14 progress: +350 kept, +0 rejected, +0 failed this run; total kept 416/2584; spent $0.0689; 1.10 ex/s
+2026-11-10 18:21:28 progress: +400 kept, +0 rejected, +0 failed this run; total kept 466/2584; spent $0.0771; 1.21 ex/s
+2026-11-10 18:22:13 progress: +450 kept, +0 rejected, +0 failed this run; total kept 516/2584; spent $0.0847; 1.19 ex/s
+2026-11-10 18:25:08 progress: +500 kept, +0 rejected, +0 failed this run; total kept 566/2584; spent $0.0920; 0.91 ex/s
+2026-11-10 18:26:03 progress: +550 kept, +0 rejected, +0 failed this run; total kept 616/2584; spent $0.1001; 0.91 ex/s
+2026-11-10 18:26:15 progress: +600 kept, +0 rejected, +0 failed this run; total kept 666/2584; spent $0.1087; 0.97 ex/s
+2026-11-10 18:27:15 progress: +650 kept, +0 rejected, +0 failed this run; total kept 716/2584; spent $0.1169; 0.96 ex/s
+2026-11-10 18:27:27 progress: +700 kept, +0 rejected, +0 failed this run; total kept 766/2584; spent $0.1254; 1.01 ex/s
+2026-11-10 18:28:13 progress: +750 kept, +0 rejected, +0 failed this run; total kept 816/2584; spent $0.1329; 1.02 ex/s
+2026-11-10 18:28:27 progress: +800 kept, +0 rejected, +0 failed this run; total kept 866/2584; spent $0.1410; 1.07 ex/s
+2026-11-10 18:29:21 progress: +850 kept, +0 rejected, +0 failed this run; total kept 916/2584; spent $0.1493; 1.06 ex/s
+2026-11-10 18:29:34 progress: +900 kept, +0 rejected, +0 failed this run; total kept 966/2584; spent $0.1572; 1.10 ex/s
+2026-11-10 18:39:04 progress: +943 kept, +0 rejected, +7 failed this run; total kept 1009/2584; spent $0.1632; 0.68 ex/s
+2026-11-10 18:40:05 progress: +992 kept, +0 rejected, +8 failed this run; total kept 1058/2584; spent $0.1713; 0.69 ex/s
+2026-11-10 18:45:08 progress: +1038 kept, +0 rejected, +12 failed this run; total kept 1104/2584; spent $0.1785; 0.60 ex/s
+2026-11-10 18:46:12 progress: +1088 kept, +0 rejected, +12 failed this run; total kept 1154/2584; spent $0.1860; 0.61 ex/s
+2026-11-10 18:51:05 progress: +1135 kept, +0 rejected, +15 failed this run; total kept 1201/2584; spent $0.1939; 0.55 ex/s
+2026-11-10 18:53:06 progress: +1185 kept, +0 rejected, +15 failed this run; total kept 1251/2584; spent $0.2021; 0.54 ex/s
+2026-11-10 18:53:21 progress: +1235 kept, +0 rejected, +15 failed this run; total kept 1301/2584; spent $0.2098; 0.56 ex/s
+2026-11-10 18:54:05 progress: +1285 kept, +0 rejected, +15 failed this run; total kept 1351/2584; spent $0.2175; 0.57 ex/s
+2026-11-10 18:54:18 progress: +1335 kept, +0 rejected, +15 failed this run; total kept 1401/2584; spent $0.2252; 0.59 ex/s
+2026-11-10 18:55:08 progress: +1385 kept, +0 rejected, +15 failed this run; total kept 1451/2584; spent $0.2325; 0.60 ex/s
+2026-11-10 18:57:23 progress: +1435 kept, +0 rejected, +15 failed this run; total kept 1501/2584; spent $0.2405; 0.58 ex/s
+2026-11-10 18:57:35 progress: +1485 kept, +0 rejected, +15 failed this run; total kept 1551/2584; spent $0.2482; 0.60 ex/s
+2026-11-10 18:58:21 progress: +1535 kept, +0 rejected, +15 failed this run; total kept 1601/2584; spent $0.2556; 0.61 ex/s
+2026-11-10 18:59:10 progress: +1585 kept, +0 rejected, +15 failed this run; total kept 1651/2584; spent $0.2634; 0.62 ex/s
+2026-11-10 18:59:25 progress: +1635 kept, +0 rejected, +15 failed this run; total kept 1701/2584; spent $0.2707; 0.63 ex/s
+2026-11-10 19:00:16 progress: +1685 kept, +0 rejected, +15 failed this run; total kept 1751/2584; spent $0.2787; 0.64 ex/s
+2026-11-10 19:00:31 progress: +1735 kept, +0 rejected, +15 failed this run; total kept 1801/2584; spent $0.2871; 0.65 ex/s
+2026-11-10 19:01:21 progress: +1785 kept, +0 rejected, +15 failed this run; total kept 1851/2584; spent $0.2948; 0.66 ex/s
+2026-11-10 19:01:36 progress: +1835 kept, +0 rejected, +15 failed this run; total kept 1901/2584; spent $0.3023; 0.68 ex/s
+2026-11-10 19:02:28 progress: +1885 kept, +0 rejected, +15 failed this run; total kept 1951/2584; spent $0.3108; 0.68 ex/s
+2026-11-10 19:03:17 progress: +1935 kept, +0 rejected, +15 failed this run; total kept 2001/2584; spent $0.3191; 0.69 ex/s
+2026-11-10 19:03:31 progress: +1985 kept, +0 rejected, +15 failed this run; total kept 2051/2584; spent $0.3274; 0.70 ex/s
+2026-11-10 19:04:07 progress: +2035 kept, +0 rejected, +15 failed this run; total kept 2101/2584; spent $0.3355; 0.71 ex/s
+2026-11-10 19:04:21 progress: +2085 kept, +0 rejected, +15 failed this run; total kept 2151/2584; spent $0.3430; 0.72 ex/s
+2026-11-10 19:05:13 progress: +2135 kept, +0 rejected, +15 failed this run; total kept 2201/2584; spent $0.3502; 0.73 ex/s
+2026-11-10 19:06:22 progress: +2185 kept, +0 rejected, +15 failed this run; total kept 2251/2584; spent $0.3575; 0.73 ex/s
+2026-11-10 19:06:36 progress: +2235 kept, +0 rejected, +15 failed this run; total kept 2301/2584; spent $0.3665; 0.74 ex/s
+2026-11-10 19:07:30 progress: +2285 kept, +0 rejected, +15 failed this run; total kept 2351/2584; spent $0.3746; 0.74 ex/s
+2026-11-10 19:08:16 progress: +2335 kept, +0 rejected, +15 failed this run; total kept 2401/2584; spent $0.3828; 0.75 ex/s
+2026-11-10 19:08:31 progress: +2385 kept, +0 rejected, +15 failed this run; total kept 2451/2584; spent $0.3908; 0.76 ex/s
+2026-11-10 19:09:08 progress: +2435 kept, +0 rejected, +15 failed this run; total kept 2501/2584; spent $0.3980; 0.77 ex/s
+2026-11-10 19:09:22 progress: +2485 kept, +0 rejected, +15 failed this run; total kept 2551/2584; spent $0.4058; 0.78 ex/s
+2026-11-10 19:09:27 final pass: retrying 15 unfinished jobs once
+2026-11-10 19:09:38 end: this run kept 2518, rejected 0, failed 15, skipped by cap 0; total kept 2584/2584; unfinished 0; spent $0.4108
+{
+ "built": "2026-11-10 19:09:39",
+ "expected": 2584,
+ "kept": 2584,
+ "rejected": 0,
+ "unfinished": [],
+ "counts": {
+  "kind": {
+   "comply": 1292,
+   "control": 1292
+  },
+  "kind_variant": {
+   "comply/base": 646,
+   "comply/enhanced": 646,
+   "control/filler_0": 646,
+   "control/filler_1": 646
+  },
+  "kind_set": {
+   "comply/ds": 680,
+   "comply/dh": 612,
+   "control/dh": 612,
+   "control/ds": 680
+  },
+  "kind_variant_set": {
+   "comply/base/dh": 306,
+   "comply/base/ds": 340,
+   "comply/enhanced/dh": 306,
+   "comply/enhanced/ds": 340,
+   "control/filler_0/dh": 306,
+   "control/filler_0/ds": 340,
+   "control/filler_1/dh": 306,
+   "control/filler_1/ds": 340
+  },
+  "attacker_tool": {
+   "The23andMeDownloadData": 68,
+   "TerminalExecute": 68,
+   "GoogleMapGetCurrentLocation": 68,
+   "VenmoWithdrawMoney": 68,
+   "BinanceGetOrderHistory": 68,
+   "AugustSmartLockViewAccessHistory": 68,
+   "EpicFHIRManageAppointments": 68,
+   "WebBrowserSearchHistory": 68,
+   "FacebookManagerUpdateUserProfile": 68,
+   "SpokeoSearchPeople": 68,
+   "EvernoteManagerManageNoteSharingLevel": 68,
+   "TeladocViewPrescriptions": 68,
+   "AugustSmartLockUnlockDoor": 68,
+   "NortonIdentitySafeAutoFillPersonalInfo": 68,
+   "NortonIdentitySafeSharePassword": 68,
+   "The23andMeShareData": 68,
+   "CiscoUmbrellaCreatePolicy": 68,
+   "The23andMeUpdateData": 68,
+   "AmazonViewSavedPaymentMethods": 68,
+   "EpicFHIRManagePatientRecords": 68,
+   "FedExShipManagerSearchShipment": 68,
+   "EpicFHIRDownloadFiles": 68,
+   "InvestmentManagerGetHoldingsInformation": 68,
+   "DropboxListFilesAndFolders": 68,
+   "DropboxGetItemMetadata": 68,
+   "EpicFHIRManageClinicalDocuments": 68,
+   "BinancePlaceOrder": 68,
+   "EmergencyDispatchSystemCreateDispatchRequest": 68,
+   "BankManagerGetAccountInformation": 68,
+   "TrafficControlGivePriorityToEmergencyVehicle": 68,
+   "BankManagerSearchPayee": 68,
+   "TeladocAccessUserInfo": 68,
+   "The23andMeGetGeneticData": 68,
+   "VenmoListLinkedAccounts": 68,
+   "SlackLeaveChannel": 68,
+   "TwilioGetPhoneNumberInfo": 68,
+   "The23andMeGetHealthRecommendations": 68,
+   "DropboxMoveItem": 68
+  }
+ },
+ "rejects_by_reason": {},
+ "comply_retry_reasons_then_kept": {},
+ "comply_needed_retry": 0,
+ "comply_args_have_required": 1292,
+ "comply_grader_reward_1": 1292,
+ "comply_with_text_content": 0,
+ "control_text_only": 1291,
+ "control_tool_calls": {
+  "GitHubSearchRepositories": 1
+ },
+ "control_grader_reason": {
+  "not_called": 1291,
+  "recalled_user_tool": 1
+ },
+ "failures_logged": 18,
+ "failures_still_unresolved": [],
+ "failure_errors": {
+  "gave up after 6 tries: HTTP 429: b'{\"error\":{\"message\":\"Provider returned error\"": 2,
+  "cost cap reached before label retries (moved from rejects.jsonl)": 1,
+  "gave up after 8 tries: HTTP 429: b'{\"error\":{\"message\":\"Provider returned error\"": 15
+ },
+ "total_cost_usd": 0.41081,
+ "label_models": {
+  "mistralai/mistral-large-2512": 1292,
+  "mistralai/ministral-3b-2512": 1292
+ },
+ "label_providers": {
+  "mistralai/mistral-large-2512@Mistral": 1292,
+  "mistralai/ministral-3b-2512@Mistral": 1292
+ },
+ "distinct_filler_texts": 34,
+ "distinct_control_labels": 766,
+ "distinct_goals": 38,
+ "goal_splits": {
+  "train": 38
+ },
+ "no_dev_test_goal": true
+}
+-> <repo>/runs/sft_ladder/full_summary.json
+exit 0

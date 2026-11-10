@@ -1,0 +1,22 @@
+# secrets and local environment
+.env
+.env.*
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# read-only clones of other repos (see IMPLEMENTATION.md for sources)
+third_party/
+
+# generated viewer pages (rebuild with viewer/build.py; tens of MB of embedded data)
+viewer/*/
+
+# large raw traces: committed as .jsonl.gz next to them instead (gunzip -k to restore)
+runs/sft_ladder/full.jsonl
+runs/20261110-1855-eval-dev/eval_rollouts.jsonl
+runs/20261110-1619-sweep/viewer_sample.jsonl
+runs/20261110-1619-sweep/sweep_rollouts.jsonl
+runs/precheck/rollouts.jsonl
+runs/20261110-1805-phase3/rollouts.jsonl
+runs/20261110-2112-eval-test/eval_rollouts.jsonl

@@ -1,0 +1,125 @@
+Initializing evaluation...
+Loading tasks from: tasks.py
+Loaded 12 task(s)
+                              Evaluation Settings                               
+╭──────────────────────────┬───────────────────────────────────────────────────╮
+│ Setting                  │ Value                                             │
+├──────────────────────────┼───────────────────────────────────────────────────┤
+│ source                   │ tasks.py                                          │
+│ runtime                  │ local                                             │
+│ agent                    │ openai_compatible                                 │
+│ all                      │ True                                              │
+│ max_steps                │ 2                                                 │
+│ max_concurrent           │ 16                                                │
+│ group_size               │ 8                                                 │
+│                          │                                                   │
+│ openai_compatible config │                                                   │
+│   model                  │ base                                              │
+│   base_url               │ https://<workspace>--rl-redteam-serve-attacker… │
+│   api_key                │ ****                                              │
+│   completion_kwargs      │ {'temperature': 1.0, 'top_p': 1.0, 'max_tokens':  │
+│                          │ 256}                                              │
+╰──────────────────────────┴───────────────────────────────────────────────────╯
+Running evaluation (max_concurrent: 16, group_size: 8)
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+<frozen runpy>:128: RuntimeWarning: 'hud.environment.server' found in sys.modules after import of package 'hud.environment', but prior to execution of 'hud.environment.server'; this may result in unpredictable behaviour
+
+'tasks.py' Results
+  Runs: 96
+  Time: 48.6s
+  Mean reward: 0.031
+

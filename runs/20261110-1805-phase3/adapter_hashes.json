@@ -1,0 +1,7 @@
+{
+ "checkpoint-80/adapter_model.safetensors": "0f66e2730aca4787133758e423ca7edec26187678b8bc47b5c2a0be08e6b049f",
+ "final_adapter/adapter_model.safetensors": "0f66e2730aca4787133758e423ca7edec26187678b8bc47b5c2a0be08e6b049f",
+ "identical": true,
+ "bytes": 239536272,
+ "checked": "2026-11-10 ~20:10 SGT via modal volume get + shasum -a 256"
+}

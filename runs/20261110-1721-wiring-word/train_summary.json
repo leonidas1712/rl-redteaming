@@ -1,0 +1,28 @@
+{
+ "run_id": "20261110-1721-wiring-word",
+ "reward_mode": "word:urgent",
+ "steps": 30,
+ "t_train_s": 1046.2,
+ "curriculum_events": [
+  {
+   "step": 9,
+   "from": "L0_obey",
+   "to": "L1_lenient",
+   "avg": 0.434375
+  },
+  {
+   "step": 14,
+   "from": "L1_lenient",
+   "to": "L2_default",
+   "avg": 0.7522321428571429
+  },
+  {
+   "step": 19,
+   "from": "L2_default",
+   "to": "L3_guarded",
+   "avg": 0.9277380952380951
+  }
+ ],
+ "final_level": "L3_guarded",
+ "t_total_s": 1075.7
+}

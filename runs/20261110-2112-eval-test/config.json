@@ -1,0 +1,109 @@
+{
+ "run_id": "20261110-2112-eval-test",
+ "phase": "eval",
+ "train_run": "20261110-1805-phase3",
+ "models": {
+  "target": {
+   "name": "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+   "revision": "b6d637bef2393152b3da2b2fde72eecdee30557e",
+   "allow_patterns": [
+    "consolidated.safetensors",
+    "params.json",
+    "tekken.json",
+    "*.json",
+    "*.jinja",
+    "*.txt"
+   ]
+  },
+  "attacker": {
+   "name": "Qwen/Qwen2.5-3B-Instruct",
+   "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+   "allow_patterns": null
+  }
+ },
+ "gpu": "A100-80GB",
+ "eval_args": {
+  "split": "test",
+  "n": 8,
+  "levels": [
+   "L2_default",
+   "L0_obey"
+  ],
+  "variant": "v2_context_hints",
+  "max_tokens": 256,
+  "seed": 0
+ },
+ "source_sha256": {
+  "modal_app.py": "fb6c79693a710da9",
+  "src/redteam/attacker.py": "558722ed2637fa2e",
+  "src/redteam/attacker_prompts.py": "ee9e0430b5b4fdc0",
+  "src/redteam/episode.py": "897429ffab2286b1",
+  "src/redteam/evaluate.py": "3d414b3297ad516a",
+  "src/redteam/injecagent_vendored.py": "7d7d2adefa00ea7d",
+  "src/redteam/phase0.py": "25eaded65fd62117",
+  "src/redteam/splits.py": "913515bf013a411b",
+  "src/redteam/stats.py": "c0f5a949414fcf38",
+  "src/redteam/sweep.py": "7094ebe0d2552cb3",
+  "src/redteam/target.py": "9af1bcb039b4f70e",
+  "src/redteam/train.py": "4612a71db74dd365"
+ },
+ "started_local": "2026-11-10T21:12:52.356035",
+ "final_eval_confirmed": true,
+ "only_adapters": [
+  "step80"
+ ],
+ "vllm_target_cmd": [
+  "vllm",
+  "serve",
+  "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+  "--revision",
+  "b6d637bef2393152b3da2b2fde72eecdee30557e",
+  "--served-model-name",
+  "mistralai/Ministral-3-3B-Instruct-2512-BF16",
+  "--port",
+  "8010",
+  "--gpu-memory-utilization",
+  "0.35",
+  "--max-model-len",
+  "8192",
+  "--seed",
+  "0",
+  "--tokenizer-mode",
+  "mistral",
+  "--config-format",
+  "mistral",
+  "--load-format",
+  "mistral",
+  "--enable-auto-tool-choice",
+  "--tool-call-parser",
+  "mistral"
+ ],
+ "vllm_attacker_cmd": [
+  "vllm",
+  "serve",
+  "Qwen/Qwen2.5-3B-Instruct",
+  "--revision",
+  "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "--served-model-name",
+  "Qwen/Qwen2.5-3B-Instruct",
+  "--port",
+  "8011",
+  "--gpu-memory-utilization",
+  "0.35",
+  "--max-model-len",
+  "4096",
+  "--seed",
+  "0",
+  "--enable-lora",
+  "--max-lora-rank",
+  "32",
+  "--max-loras",
+  "4",
+  "--lora-modules",
+  "step80=/runs/20261110-1805-phase3/checkpoints/checkpoint-80"
+ ],
+ "adapters": [
+  "base",
+  "step80"
+ ]
+}

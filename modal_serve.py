@@ -1,4 +1,4 @@
-"""Two OpenAI-compatible vLLM endpoints on Modal, for the HUD demo (and anything else that wants our models over HTTPS).
+"""Two OpenAI-compatible vLLM endpoints on Modal, used by hud_env/ and anything else that wants our models over HTTPS.
 
   modal serve modal_serve.py      # dev mode: endpoints live only while this command runs (Ctrl-C stops billing)
 

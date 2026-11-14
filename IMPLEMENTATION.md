@@ -369,7 +369,7 @@ That is **about 25–35 s per step**, so 40 steps ≈ 15–20 min. Measured in p
 - Phase 7 needs Llama Prompt Guard. It is gated on HF, so request access early if we want it.
 
 ### Optional HUD wrap (30–45 min, after phase 3, $0 GPU if run locally)
-HUD SDK v6 (`hud` 0.6.23) [read by a helper agent, cites in the `hud-python` repo `docs/v6/*`]:
+HUD SDK v6 (`hud` 0.6.23) [cites in the `hud-python` repo `docs/v6/*`]:
 - **v6 dropped `@env.scenario` and `@env.tool`.** An environment is `Environment(name=…)` with `@env.template()` async generators: the first `yield` is the prompt, the agent's answer comes back in, and the second `yield` is the reward [`docs/v6/reference/tasks.mdx:27-47`].
 - Tools come from your own FastMCP server, registered with `env.add_capability(Capability.mcp(…))` [`docs/v6/reference/capabilities.mdx:79-113`].
 - `hud eval tasks.py <agent> --runtime local` runs without a HUD API key [`docs/v6/guides/running-an-eval.mdx:77-79`].
@@ -614,7 +614,7 @@ That fits within the ~$70 of Modal credit with a wide margin. **The risk is wall
 | D7 | Reward | **Binary, tool name only (InjecAgent rule); `strict_args_match` logged, not rewarded** | Require argument match |
 | D8 | lr / LoRA | **2e-5, r=32, α=64**, confirmed by the easy-word probe | RL-Hammer's 1e-5, r=128, α=64 |
 | D9 | GPU | **Modal A100-80GB** | L40S (48 GB, ~22% cheaper; fine for a 3B attacker + small target) |
-| D10 | HUD wrap | **Only after phase 3, final-answer-as-injection, local runtime, frontier attacker via API key if you have one** | Skip |
+| D10 | HUD wrap | **Only after phase 3, final-answer-as-injection, local runtime** | Skip |
 | D11 | Explainer | **`explainer/index.html` in the repo; I can also publish it as a private claude.ai page for sharing** | Repo file only |
 
 If you say "go with defaults", I start phase 0. That is the first GPU spend, about $1.

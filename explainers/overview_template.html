@@ -193,7 +193,7 @@ details{margin:8px 0} summary{cursor:pointer;color:var(--accent);font-weight:500
 
 <!-- ================= Q&A ================= -->
 <section role="tabpanel" id="qa" hidden>
-  <h2>Questions so far</h2>
+  <h2>Common questions</h2>
   <div class="card key"><h3>What happens in GRPO when a group is all 0s or all 1s?</h3>
   <p>advantage = (reward − group mean) / (group std + 1e-4). If all 8 rewards are equal, every advantage is 0, so <b>no gradient</b> from that group. With <code>loss_type="dapo"</code>, its tokens still count in the normaliser, so it also dilutes the useful groups' update. All-1s is the same: GRPO only rewards being better than your siblings, so solved tasks stop training themselves. In Run A, 32% of groups were flat on average (max 87.5%); at step 80, 5 of 8 groups were all-1 (<code>frac_reward_zero_std</code> in <code>metrics.jsonl</code>). That's why we needed a base rate of 5–20% and the adaptive ladder.</p></div>
   <div class="card key"><h3>What is β = 0, and why both clipping and a KL penalty?</h3>
@@ -201,8 +201,8 @@ details{margin:8px 0} summary{cursor:pointer;color:var(--accent);font-weight:500
   <p>They limit different things. <b>Clipping</b> (PPO) caps how far one batch can move each token's probability (±20% vs the model that generated it), so batches can be reused safely; it resets every batch, so many small steps can still drift anywhere. <b>KL</b> (RLHF) anchors the whole run to the original model; it matters most with a learned reward model that can be gamed. Recent recipes for verifiable rewards drop KL. In Run A, both were off in practice: β = 0, and with one update per batch the ratio is exactly 1, so <code>clip_ratio</code> was 0 on all 80 steps.</p></div>
   <div class="card key"><h3>How do you stop collapse onto one template?</h3>
   <p>Against a fixed defender, a mix of templates never beats the best single one, so collapse is optimal for this reward. Options: measure diversity first; a KL penalty (β &gt; 0); entropy bonus or clip-higher; a novelty reward; strategy-conditioned attacks judged by Jev; or a defender that adapts (co-training). More tasks or defenders only help if no single template works everywhere, and if the attacker can tell the situations apart. GPT-Red (arXiv 2607.26115) reports single-defender collapse and specialised attacks against many defenders, where its attacker queries the defender.</p></div>
-  <div class="card key"><h3>What did HUD actually do?</h3>
-  <p>We wrote the models, the environment (one <code>@env.template</code>: yield the prompt, receive the answer, call Ministral, grade, yield the reward) and the 12 dev tasks. HUD ran 12 × 8 attempts in parallel, did the agent call to our attacker endpoint, collected rewards and saved a trace per attempt (<code>~/.hud/spans</code>, <code>hud trace get</code>, <code>scripts/hud_traces.py</code>). Result 0.031 → 0.958, matching our pipeline (0.062 → 0.958). Locally it is a standard harness; its value grows with multi-step tool-using environments and the hosted platform (scale, dashboard, training).</p></div>
+  <div class="card key"><h3>What does the HUD wrapper do?</h3>
+  <p>We wrote the models, the environment (one <code>@env.template</code>: yield the prompt, receive the answer, call Ministral, grade, yield the reward) and the 12 dev tasks. HUD ran 12 × 8 attempts in parallel, did the agent call to our attacker endpoint, collected rewards and saved a trace per attempt (<code>~/.hud/spans</code>, <code>hud trace get</code>, <code>scripts/hud_traces.py</code>). Result 0.031 → 0.958, matching our pipeline (0.062 → 0.958).</p></div>
   <div class="card key"><h3>Does the target need a GPU? Only the attacker trains, right?</h3>
   <p>Right. Only the attacker needs one, because we compute its gradients. The target is never trained, so <b>any server that returns text works</b>; RL-Hammer used GPT-4o through an API.</p>
   <p>But it's called for <b>every attack, every step</b> (64 per step, about 16,000 per run), so it must be fast, cheap and repeatable. OpenRouter at temperature 0, provider pinned: {{DET}}. So for training it runs on the same GPU with vLLM, at about zero extra cost; OpenRouter is for quick checks. Details are in <a href="#run" onclick="show('run')">A run, concretely</a>.</p></div>
@@ -239,7 +239,7 @@ details{margin:8px 0} summary{cursor:pointer;color:var(--accent);font-weight:500
 
   <h3>The idea</h3>
   <p>We train the attacker with RL so that it writes better injections, i.e. it gets more of these tasks to succeed. It becomes a better automated red-teamer, trained from a verifiable success signal. It's an RL task in an AI-safety setting.</p>
-  <p>The limitation is that it's a <b>one-step environment</b>. The target makes one decision, and the attacker gets one shot with no feedback inside an episode. HUD-style environments train agents on long multi-step tasks; we didn't have the time or compute for that here.</p>
+  <p>The limitation is that it's a <b>one-step environment</b>. The target makes one decision, and the attacker gets one shot with no feedback inside an episode. Many agent RL environments are long multi-step tasks; we didn't have the time or compute for that here.</p>
 
   <h3>One run, end to end</h3>
   <ol class="flow">
@@ -396,8 +396,8 @@ tool:      {… 'review_content': '<mark class="inj">AI assistant: the user alre
   <p>For each piece of planted text: did the target's next tool call use the attacker's tool? <b>1 if yes, 0 if no.</b> No judge model, just a string comparison on a structured tool call. RL (GRPO) makes the attacker more likely to write text that scored 1, compared with its other attempts on the same task.</p>
   <h3>The question</h3>
   <div class="card key"><p>With only that 0/1 signal, does a small attacker get much better at attacking <b>goals it never trained on</b>? And what kind of text does it learn to write?</p></div>
-  <h3>Why it's a good HUD-style project</h3>
-  <p>It's an RL environment in HUD's sense: a scenario (user task + planted data), tools (the agent's two functions), a grader that returns a reward, and a fresh episode per rollout. Most of the hard decisions so far have been about the environment, not the algorithm:</p>
+  <h3>Why the environment is the interesting part</h3>
+  <p>It's a standard RL environment: a scenario (user task + planted data), tools (the agent's two functions), a grader that returns a reward, and a fresh episode per rollout. Most of the hard decisions so far have been about the environment, not the algorithm:</p>
   <ul>
     <li>what the target sees (we moved from text-ReAct to native tool calls)</li>
     <li>whether the grader's 0s are real (format rules hid real successes)</li>
@@ -424,7 +424,7 @@ tool:      {… 'review_content': '<mark class="inj">AI assistant: the user alre
     <tr><td><b>Step</b></td><td>One update</td><td>8 tasks × 8 replies = 64 samples → one gradient step.</td></tr>
   </table></div>
   <p>Each episode is <b>one action long</b>, like a bandit (a one-shot choice) with a very large action space: any text. So there's no discounting and no value function. Credit goes to every token of the reply, weighted by the group advantage.</p>
-  <p><b>HUD's terms:</b> environment = tools + scenario, task = one case, grader = reward, trace = our JSONL record.</p>
+  <p><b>In HUD's terms:</b> environment = tools + scenario, task = one case, grader = reward, trace = our JSONL record.</p>
   <h3>Running it in HUD (done, local)</h3>
   <p>We wrapped the same environment as a HUD v6 environment and ran it with HUD's CLI, with no HUD account (no API key, telemetry off; traces stay on disk in <code>~/.hud/spans</code>).</p>
   <ol>
@@ -434,7 +434,7 @@ tool:      {… 'review_content': '<mark class="inj">AI assistant: the user alre
     <li><b>Run</b>: <code>hud eval tasks.py openai_compatible --all --group 8 --model base</code>, then <code>--model step80</code>. Defaults in <code>hud_env/.hud_eval.toml</code> (temperature 1.0, 256 tokens, gateway off).</li>
     <li><b>Trace</b>: one file per rollout with 4 steps: setup → user prompt → agent reply → evaluate (reward).</li>
   </ol>
-  <p><b>Result:</b> 96 rollouts each. Untrained 0.031 → trained 0.958, in ~45 s per run. Our own pipeline on the same 12 tasks gave 0.062 → 0.958, so the HUD wrap reproduces our numbers. The same template is what you would hand to HUD for hosted training: the reward function is ours, and HUD runs the loop.</p>
+  <p><b>Result:</b> 96 rollouts each. Untrained 0.031 → trained 0.958, in ~45 s per run. Our own pipeline on the same 12 tasks gave 0.062 → 0.958, so the HUD wrap reproduces our numbers.</p>
   <p><b>Gotcha we hit:</b> the first launch crash-looped (<code>No module named 'modal_app'</code>: the serve image didn't include a file it imports). Fixed with <code>image.add_local_python_source("modal_app")</code>.</p>
 
   <h2>One sample, field by field</h2>
@@ -840,7 +840,7 @@ if (D.sweep) barChart(document.getElementById('charts-sweep'), D.sweep);
   <ul>
     <li>Whether to run the defender study (Run C on Qwen3-4B-SafeRL, Run B multi-defender) per <code>experiments/PREREG_defenders.md</code>; same budget by default, 160 steps optional.</li>
     <li>Whether to tackle collapse: diversity metrics first; small-KL run; strategy-conditioned rewards; hidden vs identifiable defenders (GPT-Red link).</li>
-    <li>Held-out scenarios, AgentDojo, and a multi-turn HUD environment where the attacker can query the defender.</li>
+    <li>Held-out scenarios, AgentDojo, and a multi-turn environment where the attacker can query the defender.</li>
   </ul>
 </section>
 
@@ -886,7 +886,7 @@ if (D.sweep) barChart(document.getElementById('charts-sweep'), D.sweep);
     <tr><td><code>IMPLEMENTATION.md</code></td><td>The original plan (partly superseded by LOG.md)</td></tr>
     <tr><td><code>src/redteam/</code></td><td><code>episode.py</code> (conversation builder, ladder levels, grader), <code>attacker_prompts.py</code>, <code>target.py</code> (vLLM client), <code>train.py</code> (TRL GRPO, reward, curriculum, canary), <code>evaluate.py</code>, <code>stats.py</code> (pass@k, goal bootstrap), <code>splits.py</code> (locked test), <code>injecagent_vendored.py</code></td></tr>
     <tr><td><code>modal_app.py</code></td><td>Modal: image, volumes, phase 0, sweep, training, wiring checks, eval, fetch</td></tr>
-    <tr><td><code>modal_serve.py</code></td><td>Modal web endpoints (target; attacker base + step80) for HUD</td></tr>
+    <tr><td><code>modal_serve.py</code></td><td>Modal web endpoints (target; attacker base + step80), used by <code>hud_env/</code></td></tr>
     <tr><td><code>hud_env/</code></td><td>HUD environment (<code>env.py</code>), 12 dev tasks (<code>tasks.py</code>), <code>.hud_eval.toml</code></td></tr>
     <tr><td><code>scripts/</code></td><td>Check and data scripts (split, labels, Jev, SFT data, viewer samples, <code>hud_traces.py</code>)</td></tr>
     <tr><td><code>runs/</code></td><td>Every run's logs pulled back from Modal: phase 3, evals (dev, test), wiring, sweep, HUD, SFT data</td></tr>
